@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.1.1)  5 JAN 2025 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.1.1)  5 JAN 2025 21:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,7 +586,11 @@ Package caption Info: New subtype `subtable' on input line 238.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box52
-) (./report.aux)
+) (./report.aux
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+))
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -604,10 +608,6 @@ LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 21.
- (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
-File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
-)
 LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
@@ -694,96 +694,48 @@ Overfull \hbox (7.36882pt too wide) in paragraph at lines 131--139
 [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [3]
-
-LaTeX Warning: File `graph8.pdf' not found on input line 214.
-
-
-/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex:214: Package pdftex.def Error: File `graph8.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.214 ...graphics[width=0.8\linewidth]{graph8.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for LGR+cmtt on input line 214.
-(/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmtt.fd
-File: lgrcmtt.fd 2017/07/29 v1.2 Greek European Computer Typewriter
-)
-
-LaTeX Warning: File `modularity_vs_distance.png' not found on input line 220.
-
-
-/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex:220: Package pdftex.def Error: File `modularity_vs_distance.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 ....8\linewidth]{modularity_vs_distance.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<../plots/quad.pdf, id=31, 462.52798pt x 346.89601pt>
+File: ../plots/quad.pdf Graphic file (type pdf)
+<use ../plots/quad.pdf>
+Package pdftex.def Info: ../plots/quad.pdf  used on input line 214.
+(pdftex.def)             Requested size: 116.08885pt x 87.06255pt.
+File: ../plots/quad.pdf Graphic file (type pdf)
+<use ../plots/quad.pdf>
+Package pdftex.def Info: ../plots/quad.pdf  used on input line 220.
+(pdftex.def)             Requested size: 116.08885pt x 87.06255pt.
 
 Underfull \hbox (badness 2735) in paragraph at lines 221--221
 []\LGR/cmr/m/n/10.95 (b�) |\OT1/cmr/m/n/10.95 mo-du-la-rity vs di-sta-nce
  []
 
-
-LaTeX Warning: File `graph8comm.pdf' not found on input line 226.
-
-
-/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex:226: Package pdftex.def Error: File `graph8comm.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.226 ...hics[width=0.8\linewidth]{graph8comm.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<../plots/quad_comm_gamma=0.5.pdf, id=32, 578.16pt x 578.16pt>
+File: ../plots/quad_comm_gamma=0.5.pdf Graphic file (type pdf)
+<use ../plots/quad_comm_gamma=0.5.pdf>
+Package pdftex.def Info: ../plots/quad_comm_gamma=0.5.pdf  used on input line 226.
+(pdftex.def)             Requested size: 116.08885pt x 116.08868pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 227.
 
-LaTeX Warning: Reference `fig:graph8' on page 4 undefined on input line 238.
 
-
-LaTeX Warning: Reference `fig:mod_dist' on page 4 undefined on input line 239.
-
-
-
-[4] (./report.aux)
+[4 <../plots/quad.pdf> <../plots/quad_comm_gamma=0.5.pdf>] (./report.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 6861 strings out of 473362
- 114507 string characters out of 5723556
- 503058 words of memory out of 5000000
- 29922 multiletter control sequences out of 15000+600000
- 579325 words of font info for 88 fonts, out of 8000000 for 9000
+ 6760 strings out of 473362
+ 111846 string characters out of 5723556
+ 503269 words of memory out of 5000000
+ 29825 multiletter control sequences out of 15000+600000
+ 578845 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,7n,77p,592b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmi1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/gttn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathb12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (4 pages, 261349 bytes).
+ 67i,8n,77p,591b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmi1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathb12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on report.pdf (4 pages, 257092 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

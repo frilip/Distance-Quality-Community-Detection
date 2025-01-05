@@ -10,6 +10,9 @@ def greedy_distance_communities(G, gamma, max_iter):
     # Seperate the graph to its connected components, 
     # Two different connected components should not be in the same community
     components = list(nx.connected_components(G))
+    
+    calculated_communities = [] # array that will hold communities
+
     for comp in components:
         # generate induced graph of the component
         cc_graph = G.subgraph(comp)
