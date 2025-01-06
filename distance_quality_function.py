@@ -15,13 +15,13 @@ def distance_quality(G, communities, gamma, degrees, m, shortest_paths_len, diam
 
     # quality function initialisation
     Q = 0
-
     for C in communities:
         
         # ---------- Actuall Distance Matrix -----------
 
         # D_v(C) is the sum of shortest path lengths between every pair in the community
         D_v_C_Actuall = 0
+
         for node_i in C:
             for node_j in C:
                 D_v_C_Actuall += shortest_paths_len[node_i][node_j]

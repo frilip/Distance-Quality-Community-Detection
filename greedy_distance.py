@@ -71,4 +71,4 @@ def greedy_distance_communities(G, gamma, max_iter):
             if current_quality <= old_quality:
                 break
         
-        return communities
+        return communities # fix this for cc
