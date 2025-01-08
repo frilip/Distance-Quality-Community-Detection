@@ -11,7 +11,7 @@ def color_communities(H, comm):
     
     # Generate a distinct set of colors based on the number of communities
     num_communities = len(comm)
-    color_map = plt.cm.get_cmap("tab20", num_communities)  # 'tab20' colormap has 20 distinct colors, adjust as needed
+    color_map = plt.get_cmap("tab20", num_communities)  # Updated colormap retrieval
     
     # Assign colors to each node based on its community
     for idx, cluster in enumerate(comm):
@@ -29,6 +29,8 @@ def color_communities(H, comm):
     nx.draw(H, pos, with_labels=True, node_size=500,
             node_color=community_colors,
             font_weight='bold', font_size=10)
+
+
 
 
 
