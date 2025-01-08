@@ -2,43 +2,8 @@ import networkx as nx
 from distance_quality_function import distance_quality, generate_distance_args
 import heapq
 import numpy as np
-#from networkx.utils.mapped_queue import MappedQueue
-
-'''
-class Item:
-    def __init__(self, value, data):
-        self.value = value
-        self.data = data
-
-    def __lt__(self, other):
-        return self.value < other.value
 
 
-
-class MaxHeap:
-    def __init__(self):
-        self.heap = []
-
-    def push(self, item):
-        heapq.heappush(self.heap, item)
-
-    def pop(self):
-        return heapq.heappop(self.heap)
-
-    def peek(self):
-        return self.heap[0]
-
-    def iterate(self):
-        for item in self.heap:
-            yield (-item[0],) + item[1:]
-
-    def remove(self, value_to_remove):
-        for i, item in enumerate(self.heap):
-            if item[1] == value_to_remove:
-                del self.heap[i]
-                heapq.heapify(self.heap)
-                return
-'''
 
 def newman_greedy_distance(G, gamma):
     '''
@@ -61,6 +26,10 @@ def newman_greedy_distance(G, gamma):
         # rename the nodes of the graph so that they can work as indices on an array 
         # this will make calling the dynamicly computed information faster to pull
         node_mapping = {old: new for new, old in enumerate(cc_graph.nodes)}
+
+        reverse_node_mapping = {new: old for old, new in node_mapping.items()}
+
+
         cc_graph = nx.relabel_nodes(cc_graph, node_mapping)
 
         # generate calculations once
@@ -98,6 +67,17 @@ def newman_greedy_distance(G, gamma):
             # calculate new max indices
             max_i, max_j = np.unravel_index(np.argmax(D_Q), D_Q.shape)
 
+        
+        # reverse node mapping
+        reversed_communities = []
+
+        for community in communities:
+            reversed_community = [reverse_node_mapping[node] for node in community]
+            reversed_communities.append(reversed_community)
+
+        # remove empty communities
+        reversed_communities = list(filter(None, reversed_communities))
         # add connected component communities to final communities
-        calculated_communities = calculated_communities + communities
+        calculated_communities = calculated_communities + reversed_communities
+
     return calculated_communities

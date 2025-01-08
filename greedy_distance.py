@@ -20,6 +20,8 @@ def greedy_distance_communities(G, gamma, max_iter):
         # rename the nodes of the graph so that they can work as indices on an array 
         # this will make calling the dynamicly computed information faster to pull
         node_mapping = {old: new for new, old in enumerate(cc_graph.nodes)}
+        reverse_node_mapping = {new: old for old, new in node_mapping.items()}
+
         cc_graph = nx.relabel_nodes(cc_graph, node_mapping)
 
         # generate calculations once
@@ -71,6 +73,15 @@ def greedy_distance_communities(G, gamma, max_iter):
             if current_quality <= old_quality:
                 break
         
+        # reverse node mapping
+        reversed_communities = []
+        for community in communities:
+            reversed_community = [reverse_node_mapping[node] for node in community]
+            reversed_communities.append(reversed_community)
+
+        # remove empty communities
+        reversed_communities = list(filter(None, reversed_communities))
         # add connected component communities to final communities
-        calculated_communities = calculated_communities + communities
+        calculated_communities = calculated_communities + reversed_communities
+
     return calculated_communities
