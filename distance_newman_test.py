@@ -39,34 +39,35 @@ G = nx.Graph()
 G.add_nodes_from([1,2,3,4,5,6])
 G.add_edges_from([(1,2),(1,4),(1,3),(2,4),(2,5),(3,4),(4,5),(5,6)])
 
-#print( distance_quality(G,[[1,4,5,6],[2,3]], 0.5) )
-
 
 H = nx.Graph()
 H.add_nodes_from([1,2,3])
 H.add_edges_from([(1,2),(2,3)])
 
-Cl = generate_full_cluster_graph_same_size(4,5)
+clusters, cl_nodes = 4, 5
+gamma = 0.02
+Cl = generate_full_cluster_graph_same_size(clusters, cl_nodes)
 
 
-comm = newman_greedy_distance(Cl, 0.035)
+comm = newman_greedy_distance(Cl, gamma)
 
 plt.figure()
 print(comm)
 comm = list(filter(None, comm))
 print(comm)
 color_communities(Cl, comm)
-plt.savefig('./plots/cluster_4,5gamma=0.035,newman.pdf')
+plt.savefig('./plots/cluster_'+str(clusters)+','+str(cl_nodes)+'gamma='+str(gamma)+',newman.pdf')
 
-
+clusters, cl_nodes = 15, 8
+gamma = 0.007
 plt.figure()
-Cl = generate_full_cluster_graph_same_size(20,8)
+Cl = generate_full_cluster_graph_same_size(clusters, cl_nodes)
 
 
-comm = newman_greedy_distance(Cl, 0.01)
+comm = newman_greedy_distance(Cl, gamma)
 
 
 comm = list(filter(None, comm))
 print(comm)
 color_communities(Cl, comm)
-plt.savefig('./plots/cluster_20,8,gamma=0.01newman.pdf')
+plt.savefig('./plots/cluster_'+ str(clusters)+','+str(cl_nodes)+',gamma='+str(gamma)+'newman.pdf')

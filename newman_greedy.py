@@ -78,7 +78,7 @@ def newman_greedy_distance(G, gamma):
         for i in range (No_comm):
             for j in range (No_comm):
                 if i==j:
-                    D_Q[i][j] = -1 # arbitrary negative value, so that joining the same community is not acounted
+                    D_Q[i][j] = - float('inf')
                     continue
                 D_Q[i][j] = 2 * ( (1-gamma) * D_v_expected[i][j] - gamma * shortest_paths_len[i][j] )
 
@@ -93,8 +93,8 @@ def newman_greedy_distance(G, gamma):
             for k in range (No_comm):
                 D_Q[max_j][k] = D_Q[max_i][k] + D_Q[max_j][k]
                 D_Q[k][max_j] = D_Q[max_i][k] + D_Q[k][max_j]
-                D_Q[max_i][k] = -1  # arbitrary negative value
-                D_Q[k][max_i] = -1
+                D_Q[max_i][k] = - float('inf')
+                D_Q[k][max_i] = - float('inf')
             # calculate new max indices
             max_i, max_j = np.unravel_index(np.argmax(D_Q), D_Q.shape)
 
