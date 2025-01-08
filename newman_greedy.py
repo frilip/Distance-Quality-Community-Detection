@@ -4,7 +4,7 @@ import heapq
 import numpy as np
 #from networkx.utils.mapped_queue import MappedQueue
 
-
+'''
 class Item:
     def __init__(self, value, data):
         self.value = value
@@ -38,11 +38,14 @@ class MaxHeap:
                 del self.heap[i]
                 heapq.heapify(self.heap)
                 return
-
+'''
 
 def newman_greedy_distance(G, gamma):
     '''
-    expanation
+    Greedy optimisation using newmans algorithm reference: #addreference
+    Starts with every node in its own community and repeatedly merges two communities 
+    that have the max change in Q_d if that change is non negative. 
+    We only calculate the change in Q_d as its cheaper.
     '''
 
     # Seperate the graph to its connected components, 
@@ -63,88 +66,36 @@ def newman_greedy_distance(G, gamma):
         # generate calculations once
         degrees,m,shortest_paths_len,diameter, Pr, D_v_expected = generate_distance_args(cc_graph)
 
+        No_comm = cc_graph.number_of_nodes() # number of communities
         communities = [[node] for node in cc_graph.nodes()]
 
-        current_quality = distance_quality(cc_graph,communities,gamma,degrees,m,shortest_paths_len,diameter, Pr, D_v_expected)
+        #current_quality = distance_quality(cc_graph,communities,gamma,degrees,m,shortest_paths_len,diameter, Pr, D_v_expected)
 
-        # array that holds D_Q(i,j) (difference of quality function if I join communities i,j)
-        D_Q = np.zeros((cc_graph.number_of_nodes(), cc_graph.number_of_nodes()))
-        # max heap containing (only non negative) max values of DQ for every node
-        H = MaxHeap()
 
-        for i in range (cc_graph.number_of_nodes()):
-            max_dq = 0
-            j_of_max_dq = None
-            for j in range (cc_graph.number_of_nodes()):
-                if (i==j):
+        # initialise matrix that will hold the values of D_Q(i,j) for communities i,j if they are merged
+        D_Q = np.empty((No_comm, No_comm))
+        # populate it, initial D_Q(i,j) are given by: 2*[(1-gamma)D_V_exp(i,j) - gamma(D_v(i,j)]
+        for i in range (No_comm):
+            for j in range (No_comm):
+                if i==j:
+                    D_Q[i][j] = -1 # arbitrary negative value, so that joining the same community is not acounted
                     continue
-                # calculate D_Q(i,j)
-                D_Q[i][j] = 2 * ( (1 - gamma) * D_v_expected[i][j] - gamma * shortest_paths_len[i][j] )
-                # if they are non negative, add them to heap
-                if ( D_Q[i][j] > max_dq ):
-                    max_dq = D_Q[i][j]
-                    j_of_max_dq = j
-            if ( j != None ):
-                # use -max_dq so heap performs as a max heap
-                H.push( (max_dq, i, j_of_max_dq) )
+                D_Q[i][j] = 2 * ( (1-gamma) * D_v_expected[i][j] - gamma * shortest_paths_len[i][j] )
 
-        
-        while H.heap: # heap has elements
-            Dq, i, j = H.pop()  # max D_Q 
-            print(i,j)
-            # merge communities i, j into community j
-            communities[j] = communities[i] + communities[j]
-            communities[i] = []      # remove community i
-             
-            # update D_Q(i,j)
-            # D_Q(j,k) for every k becomes: D_Q(i,k) + D_Q(j,k), same for D_Q(k,j)
-            max_dq = 0       # keep track of max DQ
-            k_of_max_dq = None
-            for k in range (cc_graph.number_of_nodes()):
-                if (j==k):
-                    continue
-                D_Q[j][k] = D_Q[i][k] + D_Q[j][k]
-                D_Q[k][j] = D_Q[i][k] + D_Q[j][k]
-                # make D_Q(i,.) 'none' so that it is not considered from now on, same for D_Q(.,i)
-                D_Q[i][k] = None    
-                D_Q[k][i] = None
+        # communities that result in max DQ
+        max_i, max_j = np.unravel_index(np.argmax(D_Q), D_Q.shape)
 
-                if (D_Q[j][k] >= max_dq):
-                    max_dq = D_Q[j][k]
-                    k_of_max_dq = k
-
-            
-            # update heap H: change the value corresponding to node j, to have correct D_Q
-            # also update elements where j is the target
-
-            # remove heap items corresponding to j
-            for item in H.iterate():
-                if item[1] == j:
-                    H.remove(item)
-                if item[2] == j:
-                    H.remove(item)
-                    # add max of item[1]th row
-                    max_dq_target = 0
-                    target = None
-                    for k in range (cc_graph.number_of_nodes()):
-                        if (D_Q[item[1]][k] > max_dq_target):
-                            max_dq_target = D_Q[item[1]][k]
-                            target = k
-                    if target!=None:
-                        H.push( (max_dq_target, item[1], target) )
-            # add correct values (only if it is non negative)
-            if k_of_max_dq != None:
-                H.push( (D_Q[j][k_of_max_dq], j, k_of_max_dq) )
-                print("----", j,k_of_max_dq)
+        while D_Q[max_i][max_j] >= 0:   # while Q can rise 
+            # join communities max_i, max_j into max_j
+            communities[max_j] = communities[max_j] + communities[max_i]
+            communities[max_i] = [] 
+            # update D_Q matrix 
+            for k in range (No_comm):
+                D_Q[max_j][k] = D_Q[max_i][k] + D_Q[max_j][k]
+                D_Q[k][max_j] = D_Q[max_i][k] + D_Q[k][max_j]
+                D_Q[max_i][k] = -1  # arbitrary negative value
+                D_Q[k][max_i] = -1
+            # calculate new max indices
+            max_i, max_j = np.unravel_index(np.argmax(D_Q), D_Q.shape)
 
         return communities
-
-
-
-
-
-# ------------- TEST -----------------
-G = nx.Graph()
-G.add_nodes_from([1,2,3,4,5,6])
-G.add_edges_from([(1,2),(1,4),(1,3),(2,4),(2,5),(3,4),(4,5),(5,6)])
-newman_greedy_distance(G,0.03)

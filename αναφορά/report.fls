@@ -141,6 +141,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathabx/matha10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathabx/mathb10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT report.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
@@ -160,6 +161,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1200.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1440.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1728.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathb12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb
