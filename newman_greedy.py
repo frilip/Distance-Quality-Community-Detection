@@ -98,4 +98,6 @@ def newman_greedy_distance(G, gamma):
             # calculate new max indices
             max_i, max_j = np.unravel_index(np.argmax(D_Q), D_Q.shape)
 
-        return communities
+        # add connected component communities to final communities
+        calculated_communities = calculated_communities + communities
+    return calculated_communities

@@ -71,4 +71,6 @@ def greedy_distance_communities(G, gamma, max_iter):
             if current_quality <= old_quality:
                 break
         
-        return communities # fix this for cc
+        # add connected component communities to final communities
+        calculated_communities = calculated_communities + communities
+    return calculated_communities
