@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.1.1)  9 JAN 2025 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.1.1)  9 JAN 2025 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -836,14 +836,14 @@ Overfull \hbox (7.36882pt too wide) in paragraph at lines 135--143
 
 
 [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<../plots/quad_comm_gamma=0.5.pdf, id=85, 578.16pt x 578.16pt>
+<../plots/quad_comm_gamma=0.5.pdf, id=89, 578.16pt x 578.16pt>
 File: ../plots/quad_comm_gamma=0.5.pdf Graphic file (type pdf)
 <use ../plots/quad_comm_gamma=0.5.pdf>
 Package pdftex.def Info: ../plots/quad_comm_gamma=0.5.pdf  used on input line 214.
 (pdftex.def)             Requested size: 120.92421pt x 120.92314pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 215.
-<../plots/cluster_4,5gamma=0.02,newman.pdf, id=86, 578.16pt x 578.16pt>
+<../plots/cluster_4,5gamma=0.02,newman.pdf, id=90, 578.16pt x 578.16pt>
 File: ../plots/cluster_4,5gamma=0.02,newman.pdf Graphic file (type pdf)
 <use ../plots/cluster_4,5gamma=0.02,newman.pdf>
 Package pdftex.def Info: ../plots/cluster_4,5gamma=0.02,newman.pdf  used on input line 220.
@@ -874,12 +874,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [4 <../plots/quad_comm_gamma=0.5.pdf> <../plots/cluster_4,5gamma=0.02,newman.pdf>]
-<../plots/fullcliustergraph.pdf, id=141, 462.52798pt x 346.89601pt>
+<../plots/fullcliustergraph.pdf, id=145, 462.52798pt x 346.89601pt>
 File: ../plots/fullcliustergraph.pdf Graphic file (type pdf)
 <use ../plots/fullcliustergraph.pdf>
 Package pdftex.def Info: ../plots/fullcliustergraph.pdf  used on input line 299.
 (pdftex.def)             Requested size: 145.11052pt x 108.83348pt.
-<../plots/iterations=1.pdf, id=142, 578.16pt x 578.16pt>
+<../plots/iterations=1.pdf, id=146, 578.16pt x 578.16pt>
 File: ../plots/iterations=1.pdf Graphic file (type pdf)
 <use ../plots/iterations=1.pdf>
 Package pdftex.def Info: ../plots/iterations=1.pdf  used on input line 305.
@@ -889,12 +889,12 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 297--309
 [][] [] 
  []
 
-<../plots/iterations=6.pdf, id=143, 578.16pt x 578.16pt>
+<../plots/iterations=6.pdf, id=147, 578.16pt x 578.16pt>
 File: ../plots/iterations=6.pdf Graphic file (type pdf)
 <use ../plots/iterations=6.pdf>
 Package pdftex.def Info: ../plots/iterations=6.pdf  used on input line 316.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
-<../plots/iterations=15.pdf, id=144, 578.16pt x 578.16pt>
+<../plots/iterations=15.pdf, id=148, 578.16pt x 578.16pt>
 File: ../plots/iterations=15.pdf Graphic file (type pdf)
 <use ../plots/iterations=15.pdf>
 Package pdftex.def Info: ../plots/iterations=15.pdf  used on input line 322.
@@ -907,7 +907,7 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 314--326
 
 
 [5 <../plots/fullcliustergraph.pdf> <../plots/iterations=1.pdf> <../plots/iterations=6.pdf> <../plots/iterations=15.pdf>]
-<../plots/benchmark.pdf, id=207, 462.52798pt x 346.89601pt>
+<../plots/benchmark.pdf, id=211, 462.52798pt x 346.89601pt>
 File: ../plots/benchmark.pdf Graphic file (type pdf)
 <use ../plots/benchmark.pdf>
 Package pdftex.def Info: ../plots/benchmark.pdf  used on input line 358.
@@ -915,86 +915,86 @@ Package pdftex.def Info: ../plots/benchmark.pdf  used on input line 358.
 
 
 [6 <../plots/benchmark.pdf>]
-<../plots/iterations=1newman.pdf, id=253, 578.16pt x 578.16pt>
+<../plots/iterations=1newman.pdf, id=256, 578.16pt x 578.16pt>
 File: ../plots/iterations=1newman.pdf Graphic file (type pdf)
 <use ../plots/iterations=1newman.pdf>
-Package pdftex.def Info: ../plots/iterations=1newman.pdf  used on input line 466.
+Package pdftex.def Info: ../plots/iterations=1newman.pdf  used on input line 467.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
-<../plots/iterations=3newman.pdf, id=254, 578.16pt x 578.16pt>
+<../plots/iterations=3newman.pdf, id=257, 578.16pt x 578.16pt>
 File: ../plots/iterations=3newman.pdf Graphic file (type pdf)
 <use ../plots/iterations=3newman.pdf>
-Package pdftex.def Info: ../plots/iterations=3newman.pdf  used on input line 472.
+Package pdftex.def Info: ../plots/iterations=3newman.pdf  used on input line 473.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 464--476
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 465--477
 [][] [] 
  []
 
 
 
 [7]
-<../plots/benchmark_newman_gamma=0.01.pdf, id=269, 462.52798pt x 346.89601pt>
+<../plots/benchmark_newman_gamma=0.01.pdf, id=273, 462.52798pt x 346.89601pt>
 File: ../plots/benchmark_newman_gamma=0.01.pdf Graphic file (type pdf)
 <use ../plots/benchmark_newman_gamma=0.01.pdf>
-Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.01.pdf  used on input line 497.
+Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.01.pdf  used on input line 498.
 (pdftex.def)             Requested size: 193.47946pt x 145.11307pt.
-<../plots/benchmark_newman_gamma=0.02.pdf, id=270, 462.52798pt x 346.89601pt>
+<../plots/benchmark_newman_gamma=0.02.pdf, id=274, 462.52798pt x 346.89601pt>
 File: ../plots/benchmark_newman_gamma=0.02.pdf Graphic file (type pdf)
 <use ../plots/benchmark_newman_gamma=0.02.pdf>
-Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.02.pdf  used on input line 504.
+Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.02.pdf  used on input line 505.
 (pdftex.def)             Requested size: 193.47946pt x 145.11307pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 495--509
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 496--510
 [][] [] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 517.
+(hyperref)                removing `math shift' on input line 518.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 517.
+(hyperref)                removing `\gamma' on input line 518.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 517.
+(hyperref)                removing `math shift' on input line 518.
 
-<../plots/gammachange3,10gamma=0.02.pdf, id=271, 578.16pt x 578.16pt>
+<../plots/gammachange3,10gamma=0.02.pdf, id=275, 578.16pt x 578.16pt>
 File: ../plots/gammachange3,10gamma=0.02.pdf Graphic file (type pdf)
 <use ../plots/gammachange3,10gamma=0.02.pdf>
-Package pdftex.def Info: ../plots/gammachange3,10gamma=0.02.pdf  used on input line 523.
+Package pdftex.def Info: ../plots/gammachange3,10gamma=0.02.pdf  used on input line 524.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
-<../plots/gammachange3,10gamma=0.003.pdf, id=272, 578.16pt x 578.16pt>
+<../plots/gammachange3,10gamma=0.003.pdf, id=276, 578.16pt x 578.16pt>
 File: ../plots/gammachange3,10gamma=0.003.pdf Graphic file (type pdf)
 <use ../plots/gammachange3,10gamma=0.003.pdf>
-Package pdftex.def Info: ../plots/gammachange3,10gamma=0.003.pdf  used on input line 529.
+Package pdftex.def Info: ../plots/gammachange3,10gamma=0.003.pdf  used on input line 530.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 521--533
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 522--534
 [][] [] 
  []
 
-<../plots/gammachange6,5gamma=0.02.pdf, id=273, 578.16pt x 578.16pt>
+<../plots/gammachange6,5gamma=0.02.pdf, id=277, 578.16pt x 578.16pt>
 File: ../plots/gammachange6,5gamma=0.02.pdf Graphic file (type pdf)
 <use ../plots/gammachange6,5gamma=0.02.pdf>
-Package pdftex.def Info: ../plots/gammachange6,5gamma=0.02.pdf  used on input line 538.
+Package pdftex.def Info: ../plots/gammachange6,5gamma=0.02.pdf  used on input line 539.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
-<../plots/gammachange6,5gamma=0.04.pdf, id=274, 578.16pt x 578.16pt>
+<../plots/gammachange6,5gamma=0.04.pdf, id=278, 578.16pt x 578.16pt>
 File: ../plots/gammachange6,5gamma=0.04.pdf Graphic file (type pdf)
 <use ../plots/gammachange6,5gamma=0.04.pdf>
-Package pdftex.def Info: ../plots/gammachange6,5gamma=0.04.pdf  used on input line 544.
+Package pdftex.def Info: ../plots/gammachange6,5gamma=0.04.pdf  used on input line 545.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 536--548
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 537--549
 [][] [] 
  []
 
 
 
-[8 <../plots/iterations=1newman.pdf> <../plots/iterations=3newman.pdf> <../plots/benchmark_newman_gamma=0.01.pdf> <../plots/benchmark_newman_gamma=0.02.pdf>] (./report.bbl
+[8 <../plots/iterations=1newman.pdf> <../plots/iterations=3newman.pdf> <../plots/benchmark_newman_gamma=0.01.pdf> <../plots/benchmark_newman_gamma=0.02.pdf>]
 
-[9 <../plots/gammachange3,10gamma=0.02.pdf> <../plots/gammachange3,10gamma=0.003.pdf> <../plots/gammachange6,5gamma=0.02.pdf> <../plots/gammachange6,5gamma=0.04.pdf>])
+[9 <../plots/gammachange3,10gamma=0.02.pdf> <../plots/gammachange3,10gamma=0.003.pdf> <../plots/gammachange6,5gamma=0.02.pdf> <../plots/gammachange6,5gamma=0.04.pdf>] (./report.bbl)
 
 [10] (./report.aux)
  ***********
@@ -1006,21 +1006,21 @@ L3 programming layer <2024-11-02>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 1E4BDC9B8FA233CFD12BA3B707AFA804;2898.
+(rerunfilecheck)             Checksum: 9E87745B5BDD0BD9FA63D1C757E7454A;3086.
  ) 
 Here is how much of TeX's memory you used:
- 14600 strings out of 473362
- 238652 string characters out of 5723556
- 628323 words of memory out of 5000000
- 37495 multiletter control sequences out of 15000+600000
+ 14604 strings out of 473362
+ 238717 string characters out of 5723556
+ 628528 words of memory out of 5000000
+ 37497 multiletter control sequences out of 15000+600000
  581768 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,8n,79p,591b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmi1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathb12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (10 pages, 404376 bytes).
+Output written on report.pdf (10 pages, 406955 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 294 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

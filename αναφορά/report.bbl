@@ -5,6 +5,11 @@ Aaron Clauset, M.~E.~J. Newman, and Cristopher Moore.
 \newblock Finding community structure in very large networks.
 \newblock {\em Phys. Rev. E}, 70(6):066111, December 2004.
 
+\bibitem{benchmark_realistic}
+Andrea Lancichinetti, Santo Fortunato, and Filippo Radicchi.
+\newblock Benchmark graphs for testing community detection algorithms.
+\newblock {\em Phys. Rev. E}, 78:046110, Oct 2008.
+
 \bibitem{Newman}
 M.~E.~J. Newman.
 \newblock Fast algorithm for detecting community structure in networks.

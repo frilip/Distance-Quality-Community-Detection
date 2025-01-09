@@ -47,7 +47,7 @@ print(comm)
 color_communities(Cl, comm)
 plt.savefig('./plots/cluster_'+ str(clusters)+','+str(cl_nodes)+',gamma='+str(gamma)+'newman.pdf')
 
-'''
+
 # test for not connected graph
 G1 = generate_full_cluster_graph_same_size(3,4)
 G2 = generate_full_cluster_graph_same_size(3,7)
@@ -59,4 +59,21 @@ plt.figure()
 comm = newman_greedy_distance(G, gamma)
 print(comm)
 color_communities(G, comm)
-plt.savefig('./plots/nonconnected'+str(gamma)+'.pdf')
+plt.savefig('./plots/nonconnected'+str(gamma)+'.pdf')'''
+
+K1 = generate_full_cluster_graph_same_size(1,4)
+K2 = generate_full_cluster_graph_same_size(1,6)
+K3 = generate_full_cluster_graph_same_size(1,10)
+K4 = generate_full_cluster_graph_same_size(1,20)
+K = nx.disjoint_union(K1, K2)
+K.add_edge(3,4)
+K = nx.disjoint_union(K, K3)
+K.add_edge(9,10)
+K = nx.disjoint_union(K,K4)
+K.add_edge(19,20)
+K.add_edge(21,0)
+
+gamma = 0.005
+comm = newman_greedy_distance(K, gamma)
+color_communities(K, comm)
+plt.savefig('./plots/different_size_communities.pdf')
