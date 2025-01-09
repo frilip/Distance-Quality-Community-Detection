@@ -8,7 +8,6 @@ from color_communites import color_communities
 
 
 
-
 # ------------- TEST -----------------
 G = nx.Graph()
 G.add_nodes_from([1,2,3,4,5,6])
@@ -44,3 +43,4 @@ comm = list(filter(None, comm))
 print(comm)
 color_communities(Cl, comm)
 plt.savefig('./plots/cluster_20,8,gamma=0.01my.pdf')
+

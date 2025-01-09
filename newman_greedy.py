@@ -81,3 +81,11 @@ def newman_greedy_distance(G, gamma):
         calculated_communities = calculated_communities + reversed_communities
 
     return calculated_communities
+
+
+
+def newman_greedy_distance_auto(G, community_size):
+    ''' Newman maximisation algorithm using expected gamma for community_size'''
+    c, l = 0.1616558536042243, 0.4500547630497226
+    gamma = c * np.exp(-l*community_size)
+    return newman_greedy_distance(G, gamma)
