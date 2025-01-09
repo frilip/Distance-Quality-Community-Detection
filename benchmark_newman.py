@@ -1,7 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
-from newman_greedy import newman_greedy_distance_auto
+from newman_greedy import newman_greedy_distance
 from jaccard_implementation import jaccard_similarity_communities_optimal
 import random
 from cluster_graphs import generate_full_cluster_graph_same_size
@@ -53,7 +53,7 @@ def benchmark_same_size_clusters(clusters, cluster_nodes, gamma, cutoff):
                     break
 
         # calculate communities with distance quality function
-        calculated_communities_distance = newman_greedy_distance_auto(graph, cluster_nodes)
+        calculated_communities_distance = newman_greedy_distance(graph, gamma)
         # similarity with actual communities
         similarities_distance[iterations] = jaccard_similarity_communities_optimal(actual_communities, calculated_communities_distance)
 
@@ -62,11 +62,11 @@ def benchmark_same_size_clusters(clusters, cluster_nodes, gamma, cutoff):
         # similarity with actual communities
         similarities_modularity[iterations] = jaccard_similarity_communities_optimal(actual_communities, calculated_communities_modularity)
 
-        '''
+
         if (iterations==1 or iterations==3 or iterations==6 or iterations==15):
             plt.figure()
             color_communities(graph, calculated_communities_distance)
-            plt.savefig('./plots/iterations='+str(iterations)+'.pdf')'''
+            plt.savefig('./plots/iterations='+str(iterations)+'newman.pdf')
         
 
         iterations += 1
@@ -79,20 +79,21 @@ cutoff = 20
 distance_bench = np.zeros(cutoff)
 modularity_bench = np.zeros(cutoff)
 
-times = 3
+times = 1
+gamma = 0.015
 
 for i in range(times):    
-    similarities_distance, similarities_modularity = benchmark_same_size_clusters(4, 5, 0.035, cutoff, 40)
+    similarities_distance, similarities_modularity = benchmark_same_size_clusters(4, 5, gamma, cutoff)
     distance_bench = distance_bench + similarities_distance
     modularity_bench = modularity_bench + similarities_modularity
 # normalise 
 distance_bench = distance_bench / times
 modularity_bench = modularity_bench / times
-
-
+'''
+plt.figure()
 plt.plot(distance_bench, label='distance')
 plt.plot(modularity_bench, label='modularity')
 plt.ylim(bottom=0)
 plt.legend()
 plt.title('Distace and modularity benchmark, newmans algorithm')
-plt.show()
+plt.savefig('./plots/benchmark_newman_gamma='+str(gamma)+'.pdf')'''
