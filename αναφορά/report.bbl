@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{Clauset:fastgreedy}
+Aaron Clauset, M.~E.~J. Newman, and Cristopher Moore.
+\newblock Finding community structure in very large networks.
+\newblock {\em Phys. Rev. E}, 70(6):066111, December 2004.
+
+\bibitem{Newman}
+M.~E.~J. Newman.
+\newblock Fast algorithm for detecting community structure in networks.
+\newblock {\em Phys. Rev. E}, 69:066133, Jun 2004.
+
+\end{thebibliography}

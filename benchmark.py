@@ -5,37 +5,7 @@ from greedy_distance import greedy_distance_communities
 from jaccard_implementation import jaccard_similarity_communities_optimal
 import random
 from cluster_graphs import generate_full_cluster_graph_same_size
-
-
-
-def color_communities(H, comm):
-    node_colors = {}
-    
-    # Generate a distinct set of colors based on the number of communities
-    num_communities = len(comm)
-    color_map = plt.cm.get_cmap("tab20", num_communities)  # 'tab20' colormap has 20 distinct colors, adjust as needed
-    
-    # Assign colors to each node based on its community
-    for idx, cluster in enumerate(comm):
-        for node in cluster:
-            node_colors[node] = idx  # Community index
-
-    # Draw the graph with assigned node colors
-    pos = nx.spring_layout(H)  # Positions for nodes
-    plt.figure(figsize=(8, 8))
-
-    # Map community indices to the colors from the colormap
-    community_colors = [color_map(node_colors[node]) for node in H.nodes()]
-
-    # Draw the graph with these colors
-    nx.draw(H, pos, with_labels=True, node_size=500,
-            node_color=community_colors,
-            font_weight='bold', font_size=10)
-
-
-
-
-
+from color_communites import color_communities
 
 
 def benchmark_same_size_clusters(clusters, cluster_nodes, gamma, cutoff, greedy_max_iter):

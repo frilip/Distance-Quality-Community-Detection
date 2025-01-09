@@ -4,38 +4,11 @@ from newman_greedy import newman_greedy_distance
 from cluster_graphs import generate_full_cluster_graph_same_size
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
-
-
-def color_communities(H, comm):
-    node_colors = {}
-    
-    # Generate a distinct set of colors based on the number of communities
-    num_communities = len(comm)
-    color_map = plt.get_cmap("tab20", num_communities)  # Updated colormap retrieval
-    
-    # Assign colors to each node based on its community
-    for idx, cluster in enumerate(comm):
-        for node in cluster:
-            node_colors[node] = idx  # Community index
-
-    # Draw the graph with assigned node colors
-    pos = nx.spring_layout(H)  # Positions for nodes
-    plt.figure(figsize=(8, 8))
-
-    # Map community indices to the colors from the colormap
-    community_colors = [color_map(node_colors[node]) for node in H.nodes()]
-
-    # Draw the graph with these colors
-    nx.draw(H, pos, with_labels=True, node_size=500,
-            node_color=community_colors,
-            font_weight='bold', font_size=10)
+from color_communites import color_communities
 
 
 
-
-
-
-
+'''
 # ------------- TEST -----------------
 G = nx.Graph()
 G.add_nodes_from([1,2,3,4,5,6])
@@ -72,15 +45,15 @@ comm = newman_greedy_distance(Cl, gamma)
 print(comm)
 color_communities(Cl, comm)
 plt.savefig('./plots/cluster_'+ str(clusters)+','+str(cl_nodes)+',gamma='+str(gamma)+'newman.pdf')
-
+'''
 
 # test for not connected graph
 G1 = generate_full_cluster_graph_same_size(3,4)
-G2 = generate_full_cluster_graph_same_size(3,6)
+G2 = generate_full_cluster_graph_same_size(10,6)
 G = nx.disjoint_union(G1, G2)
 
 plt.figure()
-comm = newman_greedy_distance(G, 0.02)
+comm = newman_greedy_distance(G, 0.01)
 print(comm)
 color_communities(G, comm)
 plt.savefig('./plots/nonconnected.pdf')
