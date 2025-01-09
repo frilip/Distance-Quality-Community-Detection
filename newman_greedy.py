@@ -33,7 +33,7 @@ def newman_greedy_distance(G, gamma):
         cc_graph = nx.relabel_nodes(cc_graph, node_mapping)
 
         # generate calculations once
-        degrees,m,shortest_paths_len,diameter, Pr, D_v_expected = generate_distance_args(cc_graph)
+        degrees,m,shortest_paths_len,diameter, Pr, D_v_expected = generate_distance_args(cc_graph)  # see if all of them are needed
 
         No_comm = cc_graph.number_of_nodes() # number of communities
         communities = [[node] for node in cc_graph.nodes()]

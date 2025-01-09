@@ -11,6 +11,7 @@
 \usepackage{mathabx} % Load the mathabx package
 \usepackage{subcaption}
 \usepackage{dirtytalk}
+\usepackage{hyperref}
 \newcommand{\en}{\selectlanguage{english}}
 \newcommand{\gr}{\selectlanguage{greek}}
 
@@ -93,7 +94,7 @@ $C$ ως προς του τυχαίου γράφου.
 \[ \overline{ D_V(c)  } =  \sum_{i,j \in c} \overline{ D_V(i,j) }\]
 \[ Q_d(G,C) = \sum_{c \in C} [(1 - \gamma)\overline{ D_V(c) } - \gamma D_V(c) ],  \ \ \ \ \gamma \in (0,1)\]
 
-ώστε για $\gamma = 0.5$ να ισοδυναμεί με τον προϋγούμενο ορισμό, αλλά να έχω 
+ώστε για $\gamma = 0.5$ να ισοδυναμεί με τον προηγούμενο ορισμό, αλλά να έχω 
 δυνατότητα να επιλέξω ποιός όρος θα επηρρεάσει περισσότερο.
 
 
@@ -233,7 +234,7 @@ $C$ ως προς του τυχαίου γράφου.
 Στο σχήμα φαίνονται οι κοινότητες για τις οποίες η τιμή $Q_d$ είναι μέγιστη. Ενώ περιμέναμε για τον γράφο αυτό να επιστραφούν 
 δύο κοινότητες των 4 κόμβων, βλέπουμε ότι αυτό δεν συμβαίνει. Συγκεκριμένα για $\gamma = 0.5$ βρέθηκε πειραματικά ότι 
 τη μέγιστη τιμή $Q_d$ παίρνουμε πάντα όταν κάθε κόμβος έχει δική του κοινότητα. Σε αυτό θα χρησιμεύσει η τιμή $\gamma$, όπου με την 
-αλλαγή της μπορούμε να έχουμε τη επιθυμητή συμπεριφορά.
+αλλαγή της μπορούμε να έχουμε τη επιθυμητή συμπεριφορά (βλ. ενότητα \ref{gamma}).
 
 Παρατίθεται προκαταβολικά στο σχήμα \ref{fig:newman4,5} το αποτέλεσμα του αλγορίθμου \textlatin{Newman} για $\gamma = 0.02$ για να φανεί 
 το γεγονός αυτό.
@@ -441,7 +442,7 @@ $C$ ως προς του τυχαίου γράφου.
 συνεχήσει να είναι αρνητικό. Δηλαδή η $Q_d$ θα μειώνεται σταδιακά. Επομένως μόλις φτάσουμε 
 σε αυτό το στάδιο μπορούμε να τερματίσουμε τον αλγόριθμο, αφού βρήκαμε το μέγιστο. 
 
-Αυτός ο αλγόριθμος είναι ήδη σημαντικά πιο γρήγορος από τον προϋγούμενο, αφού το εσωτερικό 
+Αυτός ο αλγόριθμος είναι ήδη σημαντικά πιο γρήγορος από τον προηγούμενο, αφού το εσωτερικό 
 της λούπας πλέον απλοποιείται στην εύρεση μέγιστου στοιχείου ενός πίνακα. Τα υπόλοιπα είναι 
 μόνο προσθέσεις, αναθέσεις πινάκων και έλεγχοι, όλες διεργασίες 
 σταθερού χρόνου. Επίσης στον αλγόριθμο αυτόν δεν χρειάζεται να υπολογιστεί η $Q_d$ 
@@ -459,6 +460,111 @@ $C$ ως προς του τυχαίου γράφου.
 
 
 
+\begin{figure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.6\linewidth]{iterations=1newman.pdf}
+    \caption{Αποτελέσματα αλγορίθμου \textlatin{Newman} στο 2ο βήμα. ($\gamma=0.15$)}
+    \label{fig:it1new}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.6\linewidth]{iterations=3newman.pdf}
+    \caption{Αποτελέσματα αλγορίθμου \textlatin{Newman} στο 4ο βήμα. ($\gamma = 0.15$)}
+    \label{fig:it3new}
+  \end{subfigure}
+  \caption{}
+  \label{new_1}
+\end{figure}
+
+
+
+Στα σχήματα \ref{new_1}, \ref{new_2} φαίνονται τα αποτελέσματα του συγκεκριμένου αλγόριθμου 
+με τις ίδιες τεχνικές όπως προϋγουμένως. 
+Ο αλγόριθμος \textlatin{Newman} φαίνεται να έχει ίσως χειρότερα (ή αντίστοιχα) αποτελέσματα από/με τον 
+προηγούμενο, το οποίο είναι αναμενόμενο αφού ενώνει κάθε φορά ολόκληρες κοινότητες 
+αντί για μεμονομένους κόμβους και έτσι μια λάθος ένωση στην αρχή, διαδίδεται και πολλαπλασιάζεται.
+
+Το πλεονέκτιμά του είναι η ταχύτητα. 
+
+$\#add speed comparison$
+
+
+
+\begin{figure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{benchmark_newman_gamma=0.01.pdf}
+    \caption{Μέση απόδοση με χρήση \textlatin{Jaccard similarity}, στη \textlatin{distance}
+    χρησιμοποιήθηκε αλγόριθμος \textlatin{Newman} και $\gamma = 0.01$}
+    \label{fig:bench0.01new}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{benchmark_newman_gamma=0.02.pdf}
+    \caption{Μέση απόδοση με χρήση \textlatin{Jaccard similarity}, στη \textlatin{distance}
+    χρησιμοποιήθηκε αλγόριθμος \textlatin{Newman} και $\gamma = 0.02$}
+    \label{fig:bench0.02new}
+  \end{subfigure}
+  \caption{}
+  \label{new_2}
+\end{figure}
+
+
+
+
+
+\subsubsection{Επιρροή της τιμής $\gamma$}  \label{gamma}
+
+
+\begin{figure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.6\linewidth]{gammachange3,10gamma=0.02.pdf}
+    \caption{$\gamma = 0.02$}
+    \label{g1}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.6\linewidth]{gammachange3,10gamma=0.003.pdf}
+    \caption{$\gamma = 0.03$}
+    \label{g2}
+  \end{subfigure}
+
+  \vfill
+
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.6\linewidth]{gammachange6,5gamma=0.02.pdf}
+    \caption{$\gamma = 0.02$}
+    \label{g3}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.6\linewidth]{gammachange6,5gamma=0.04.pdf}
+    \caption{$\gamma = 0.03$}
+    \label{g4}
+  \end{subfigure}
+
+
+  \caption{Αποτελέσματα γράφων για διαφορετικές τιμές του $\gamma$
+  με τον αλγόριθμο \textlatin{Newman}.}
+  \label{gamma_tests}
+\end{figure}
+
+
+
+
+Στο σχήμα \ref{gamma_tests} φαίνοται τα αποτελέσματα δύο γράφων για διαφορετικές τιμές
+του $\gamma$. Βλέπουμε ότι ο γράφος στο \ref{g1} για $\gamma = 0.02$ δεν έχει καλά 
+αποτελέσματα, ενώ στο \ref{g2} για $\gamma = 0.003$ έχει πολύ καλύτερα. Το αντίθετο 
+ισχύει για το γράφο των \ref{g3}, \ref{g4}, όπου για $\gamma = 0.02$ έχει άρτια αποτελέσματα.
+
+Έιναι ξεκάθαρη η επιρροή του $\gamma$ όμως η βέλτιστη τιμή του είναι διαφορετική 
+σε κάθε γράφο. Έτσι παρουσιάζεται το ερώτημα: \emph{μπορούμε να εκτιμήσουμε τη 
+βέλτιστη τιμή του $\gamma$?}
+
+% plots of same size different cluster size
 
 
 
@@ -472,7 +578,28 @@ $C$ ως προς του τυχαίου γράφου.
 
 
 
+\subsubsection{Ανικανότητες των τεχνικών αξιολόγησης}
 
+Τα αποτελεσματα ειναι πολυ καλα για φουλ κλαστερ αλλα καθολου στα πιο τυχαια μονοτελα..
+
+
+\section{Κατάληξη}
+
+
+\section{Σημειώσεις περί του κώδικα}
+
+Κάποια αρχεία κώδικα $python$ είναι προχειρογραμένα διότι χρησιμοποιήθηκαν μόνο για τον έλεγχο και την παραγωγή γραφημάτων.
+Δε θεώρησα απαραίτητο να τα καθαρογράψω αφού δεν αποτελούν τον πηγαίο κώδικα των υλοποιήσεων των συναρτήσεων και αλγορίθμων 
+που παρουσιάζονται στην εργασία. Θα μπορούσα ίσως να μην τα συμπεριλάβω στην υποβολή καθόλου, και να δώσω τα γραφήματα 
+στην αναφορά, όμως θεώρησα χρήσιμο να μπορείτε να τα τρέξετε και να λάβεται τα ίδια γραφήματα. Δεν θα παραχθούν όλα 
+τα γραφήματα που χρησιμοποίησα γιατί κάποια παράχθηκαν σε παλίες κλήσεις, οι οποίες έχουν διαγραφτεί.
+
+Στον φάκελο υπάρχει ένα $README.md$ αρχείο, στο οποίο αναγράφεται πλήρης αναφορά του περιεχομένου των αρχείων $.py$ 
+και της χρησιμότητας του καθενός. 
+
+Το \textlatin{Github repo} της εργασίας: \en \href{https://github.com/frilip/Network-theory.git}{https://github.com/frilip/Network-theory.git}.
+
+\gr
 
 \selectlanguage{english}
 \renewcommand{\refname}{\selectlanguage{greek} Αναφορές}  
