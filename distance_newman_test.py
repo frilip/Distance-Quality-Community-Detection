@@ -1,6 +1,6 @@
 import networkx as nx
 import numpy as np
-from newman_greedy import newman_greedy_distance, newman_greedy_distance_auto
+from newman_greedy import newman_greedy_distance, newman_greedy_distance_communitysize, newman_greedy_distance_auto
 from cluster_graphs import generate_full_cluster_graph_same_size
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
@@ -24,7 +24,7 @@ gamma = 0.02
 Cl = generate_full_cluster_graph_same_size(clusters, cl_nodes)
 
 
-comm = newman_greedy_distance_auto(Cl, cl_nodes)
+comm = newman_greedy_distance_communitysize(Cl, cl_nodes)
 
 plt.figure()
 print(comm)
@@ -60,23 +60,33 @@ comm = newman_greedy_distance(G, gamma)
 print(comm)
 color_communities(G, comm)
 plt.savefig('./plots/nonconnected'+str(gamma)+'.pdf')
+
 '''
 
 
-
 K1 = generate_full_cluster_graph_same_size(1,4)
-K2 = generate_full_cluster_graph_same_size(1,6)
-K3 = generate_full_cluster_graph_same_size(1,40)
-K4 = generate_full_cluster_graph_same_size(1,100)
+K2 = generate_full_cluster_graph_same_size(1,8)
+K3 = generate_full_cluster_graph_same_size(1,16)
+#K4 = generate_full_cluster_graph_same_size(1,32)
 K = nx.disjoint_union(K1, K2)
 K.add_edge(3,4)
 K = nx.disjoint_union(K, K3)
-K.add_edge(9,10)
-K = nx.disjoint_union(K,K4)
-K.add_edge(49,50)
-K.add_edge(149,0)
+K.add_edge(11,12)
+#K = nx.disjoint_union(K,K4)
+#K.add_edge(27,28)
+K.add_edge(27,0)
 
-gamma = 0.0003
-comm = newman_greedy_distance(K, gamma)
+
+comm = newman_greedy_distance_auto(K)
 color_communities(K, comm)
 plt.savefig('./plots/different_size_communities.pdf')
+
+'''
+clusters = 40
+cluster_size = 5
+W = generate_full_cluster_graph_same_size(clusters, cluster_size)
+comm_W = newman_greedy_distance_auto(W)
+print(comm_W)
+color_communities(W, comm_W)
+plt.savefig('./plots/AUTO'+str(clusters)+','+str(cluster_size)+'.pdf')
+plt.show()'''

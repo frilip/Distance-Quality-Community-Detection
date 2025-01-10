@@ -1,13 +1,18 @@
 # Fdb version 4
-["bibtex report"] 1736523857.31111 "report.aux" "report.bbl" "report" 1736523858.29615 0
+["bibtex report"] 1736531353.6501 "report.aux" "report.bbl" "report" 1736531354.69995 0
   "./sources.bib" 1736445718.85824 1574 87c6d9300b6d1b2d65c7a59321b9e2f5 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "report.aux" 1736523857.98002 14757 f5be62c79ea0e32a057f0d2852e745fc "pdflatex"
+  "report.aux" 1736531354.38193 16591 f1853e8dab0fa3a03cde7ddde9f1e08c "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1736523857.43056 "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" "report.pdf" "report" 1736523858.29645 0
+["pdflatex"] 1736531353.76837 "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" "report.pdf" "report" 1736531354.70011 0
+  "../plots/AUTO2,13.pdf" 1736525780.76893 8893 7da3a1b928ea11d6ecca1ac9099d6c72 ""
+  "../plots/AUTO4,10.pdf" 1736525803.45723 9733 e1d019e6cc12e2cbb8826e89700d6ace ""
+  "../plots/AUTO4,5.pdf" 1736525797.89716 8138 8582f7130642460998883724e2d27f14 ""
+  "../plots/AUTO9,9.pdf" 1736529921.51916 12517 bba6bb2c7e683d052a588f7e29c81fd0 ""
+  "../plots/EDGES_GAMMA_FIT.pdf" 1736529207.76581 14497 c9784471dcfa316b70ac705c507b0bd4 ""
   "../plots/benchmark.pdf" 1736159201.27178 12424 18a41b5c383cad82d9c7198c8bd13c43 ""
   "../plots/benchmark_newman_gamma=0.01.pdf" 1736437268.14076 13274 2773dba1c4c9d6a0e8d26c7ca1403837 ""
   "../plots/benchmark_newman_gamma=0.02.pdf" 1736437310.30073 13278 ff6fb9ddf5f9cb34d36c8fb5ebb07962 ""
@@ -15,7 +20,7 @@
   "../plots/cluster_4,5gamma=0.02,newman.pdf" 1736349571.03524 8124 52149751d9accbd774bb969908a284ba ""
   "../plots/cluster_4,5newman_auto.pdf" 1736430115.81268 8141 e668569b725e0108a460c1cc21100551 ""
   "../plots/cluster_9,9newman_auto.pdf" 1736432940.0629 12540 c64acae6929d34fc1a4082a95b912ed5 ""
-  "../plots/different_size_communities.pdf" 1736522484.94577 38889 604bf8d46c8a8322c06a86b491c5be12 ""
+  "../plots/different_size_communities.pdf" 1736530988.02513 9355 b2776ac1c542bee3603e7f83a3b789a8 ""
   "../plots/fullcliustergraph.pdf" 1736427689.04641 2368 7196937010dcfffa6d91878f3d2879ec ""
   "../plots/gamma_wrt_cluster_nodes.pdf" 1736506696.71157 12656 d7b61ec7abbd1f01742680c65fa3d509 ""
   "../plots/gammachange3,10gamma=0.003.pdf" 1736441608.06761 9010 d25b1dca203513d1bb44b0174f570e63 ""
@@ -32,7 +37,7 @@
   "../plots/nonconnected_ssize_dcs0.012.pdf" 1736512240.68315 9268 53f05dc84a92a15c197bc72f2e00f15e ""
   "../plots/quad_comm_gamma=0.5.pdf" 1736103640.78925 6691 9866f07bb08f3db27df3b94684f745e3 ""
   "/etc/texmf/web2c/texmf.cnf" 1727128927.04104 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" 1736523856.24799 42228 99256739d9a1a415a615c02309167663 ""
+  "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" 1736531352.4539 46805 97700ea909b5dfe27fea6e9a208dc28b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cbfonts/grmi1200.tfm" 1213382506 5808 e0a6365e0b8791616674d4ffe0f65405 ""
@@ -166,10 +171,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1731792821 41411 144d376c3b22a9103b7ec302371a0923 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1735733746 5475605 884c3338f3c244ed6c84a2124ff6dcd4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1735733829 3347449 14e289b5c1d382a5549210c66bd40823 ""
-  "report.aux" 1736523857.98002 14757 f5be62c79ea0e32a057f0d2852e745fc "pdflatex"
-  "report.bbl" 1736523857.42001 627 0a8ff8348c6cd9f8a6aa99c73f8eedb1 "bibtex report"
-  "report.out" 1736523857.99202 3428 b9feeeb0c8deb6fbd2d8e8def2def89b "pdflatex"
-  "report.tex" 1736523856.24799 42228 99256739d9a1a415a615c02309167663 ""
+  "report.aux" 1736531354.38193 16591 f1853e8dab0fa3a03cde7ddde9f1e08c "pdflatex"
+  "report.bbl" 1736531353.76192 627 0a8ff8348c6cd9f8a6aa99c73f8eedb1 "bibtex report"
+  "report.out" 1736531354.39793 3428 b9feeeb0c8deb6fbd2d8e8def2def89b "pdflatex"
+  "report.tex" 1736531352.4539 46805 97700ea909b5dfe27fea6e9a208dc28b ""
   (generated)
   "report.aux"
   "report.log"

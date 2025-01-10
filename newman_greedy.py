@@ -84,8 +84,17 @@ def newman_greedy_distance(G, gamma):
 
 
 
-def newman_greedy_distance_auto(G, community_size):
+def newman_greedy_distance_communitysize(G, community_size):
     ''' Newman maximisation algorithm using expected gamma for community_size'''
     c, l = 0.1616558536042243, 0.4500547630497226
     gamma = c * np.exp(-l*community_size)
     return newman_greedy_distance(G, gamma)
+
+
+def newman_greedy_distance_auto(G):
+    ''' Newman approximation using expected gamma for number of edges'''
+    c_opt = 0.022201354581903955
+    l_opt = 0.005629355830701895
+    edges = G.number_of_edges()
+    expected_gamma = c_opt * np.exp( - l_opt * edges )
+    return newman_greedy_distance(G, expected_gamma)
