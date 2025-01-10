@@ -8,7 +8,7 @@ from color_communites import color_communities
 
 
 
-'''
+
 # ------------- TEST -----------------
 G = nx.Graph()
 G.add_nodes_from([1,2,3,4,5,6])
@@ -59,7 +59,7 @@ plt.figure()
 comm = newman_greedy_distance(G, gamma)
 print(comm)
 color_communities(G, comm)
-plt.savefig('./plots/nonconnected'+str(gamma)+'.pdf')'''
+plt.savefig('./plots/nonconnected'+str(gamma)+'.pdf')
 
 K1 = generate_full_cluster_graph_same_size(1,4)
 K2 = generate_full_cluster_graph_same_size(1,6)
