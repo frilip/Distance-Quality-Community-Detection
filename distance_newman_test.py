@@ -61,7 +61,7 @@ print(comm)
 color_communities(G, comm)
 plt.savefig('./plots/nonconnected'+str(gamma)+'.pdf')
 
-
+'''
 
 
 K1 = generate_full_cluster_graph_same_size(1,4)
@@ -89,4 +89,4 @@ comm_W = newman_greedy_distance_auto(W)
 print(comm_W)
 color_communities(W, comm_W)
 plt.savefig('./plots/AUTO'+str(clusters)+','+str(cluster_size)+'.pdf')
-plt.show()
+plt.show()'''

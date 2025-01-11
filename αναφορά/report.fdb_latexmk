@@ -1,19 +1,23 @@
 # Fdb version 4
-["bibtex report"] 1736597488.36853 "report.aux" "report.bbl" "report" 1736598077.08213 0
+["bibtex report"] 1736607651.40233 "report.aux" "report.bbl" "report" 1736607751.71026 0
   "./sources.bib" 1736445718.85824 1574 87c6d9300b6d1b2d65c7a59321b9e2f5 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "report.aux" 1736598076.68138 16848 3b62decad0db22c7aec170f2adce26a2 "pdflatex"
+  "report.aux" 1736607749.93331 19103 d30fee23061e3415f418765aad313b8b "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1736598076.07111 "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" "report.pdf" "report" 1736598077.08253 0
+["pdflatex"] 1736607718.61212 "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" "report.pdf" "report" 1736607751.71046 0
+  "../gephi/email-Eu-core-calculated-expectedgamma.pdf" 1736600739.09804 6915267 0ad8b5a8367cf5aab42208869f52a383 ""
+  "../gephi/email-Eu-core-calculated-gamma=0.000007.pdf" 1736601921.65827 6971924 7c5fe499fefe4933ea462cb27060f983 ""
+  "../gephi/email-Eu-core-modularity.pdf" 1736606421.31189 6961734 ca6b5be3115c154a65cdc67e21b3f25a ""
+  "../gephi/email-Eu-core.pdf" 1736519395.42437 7021989 c63d350cb4daa3b2709071d1c7023e4b ""
   "../plots/AUTO2,13.pdf" 1736525780.76893 8893 7da3a1b928ea11d6ecca1ac9099d6c72 ""
   "../plots/AUTO4,10.pdf" 1736525803.45723 9733 e1d019e6cc12e2cbb8826e89700d6ace ""
-  "../plots/AUTO4,5.pdf" 1736598075.62937 8236 cebbf3732e73741563b2b8b7fdfcaceb ""
+  "../plots/AUTO4,5.pdf" 1736598226.79052 8132 3049df47d95423b0e0a6a50b42ae4b07 ""
   "../plots/AUTO9,9.pdf" 1736529921.51916 12517 bba6bb2c7e683d052a588f7e29c81fd0 ""
-  "../plots/EDGES_GAMMA_FIT.pdf" 1736597939.70025 14887 ebd8e3bf2002685d253abebb19f47e9b ""
-  "../plots/EDGES_GAMMA_FIT_noise.pdf" 1736597290.13679 14301 b4eb2ff960ae5bdb61a9217b92da9882 ""
+  "../plots/EDGES_GAMMA_FIT.pdf" 1736598218.94647 14887 ebd8e3bf2002685d253abebb19f47e9b ""
+  "../plots/EDGES_GAMMA_FIT_noise.pdf" 1736598218.94647 14301 b4eb2ff960ae5bdb61a9217b92da9882 ""
   "../plots/benchmark.pdf" 1736159201.27178 12424 18a41b5c383cad82d9c7198c8bd13c43 ""
   "../plots/benchmark_newman_gamma=0.01.pdf" 1736437268.14076 13274 2773dba1c4c9d6a0e8d26c7ca1403837 ""
   "../plots/benchmark_newman_gamma=0.02.pdf" 1736437310.30073 13278 ff6fb9ddf5f9cb34d36c8fb5ebb07962 ""
@@ -21,7 +25,7 @@
   "../plots/cluster_4,5gamma=0.02,newman.pdf" 1736349571.03524 8124 52149751d9accbd774bb969908a284ba ""
   "../plots/cluster_4,5newman_auto.pdf" 1736430115.81268 8141 e668569b725e0108a460c1cc21100551 ""
   "../plots/cluster_9,9newman_auto.pdf" 1736432940.0629 12540 c64acae6929d34fc1a4082a95b912ed5 ""
-  "../plots/different_size_communities.pdf" 1736597843.51139 8888 71e6f5fd999af2a458bf8bf315a6acfe ""
+  "../plots/different_size_communities.pdf" 1736598339.77134 9349 55ce6537b352cc45ddbdd3dece9e37de ""
   "../plots/fullcliustergraph.pdf" 1736427689.04641 2368 7196937010dcfffa6d91878f3d2879ec ""
   "../plots/gamma_wrt_cluster_nodes.pdf" 1736506696.71157 12656 d7b61ec7abbd1f01742680c65fa3d509 ""
   "../plots/gammachange3,10gamma=0.003.pdf" 1736441608.06761 9010 d25b1dca203513d1bb44b0174f570e63 ""
@@ -38,7 +42,7 @@
   "../plots/nonconnected_ssize_dcs0.012.pdf" 1736512240.68315 9268 53f05dc84a92a15c197bc72f2e00f15e ""
   "../plots/quad_comm_gamma=0.5.pdf" 1736103640.78925 6691 9866f07bb08f3db27df3b94684f745e3 ""
   "/etc/texmf/web2c/texmf.cnf" 1727128927.04104 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" 1736597830.06327 48329 4a958959f9b6eafbbcb370afff7eff3b ""
+  "/home/frfr/Documents/Τημμυ/Θεωρία Δικτύων/εργασια/αναφορά/report.tex" 1736607689.9132 51649 a5847c9f9ad728739150ef9c6ea9b59a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cbfonts/grmi1200.tfm" 1213382506 5808 e0a6365e0b8791616674d4ffe0f65405 ""
@@ -172,10 +176,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1731792821 41411 144d376c3b22a9103b7ec302371a0923 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1735733746 5475605 884c3338f3c244ed6c84a2124ff6dcd4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1735733829 3347449 14e289b5c1d382a5549210c66bd40823 ""
-  "report.aux" 1736598076.68138 16848 3b62decad0db22c7aec170f2adce26a2 "pdflatex"
-  "report.bbl" 1736597488.48359 627 0a8ff8348c6cd9f8a6aa99c73f8eedb1 "bibtex report"
-  "report.out" 1736598076.69338 3428 b9feeeb0c8deb6fbd2d8e8def2def89b "pdflatex"
-  "report.tex" 1736597830.06327 48329 4a958959f9b6eafbbcb370afff7eff3b ""
+  "report.aux" 1736607749.93331 19103 d30fee23061e3415f418765aad313b8b "pdflatex"
+  "report.bbl" 1736607651.53295 627 0a8ff8348c6cd9f8a6aa99c73f8eedb1 "bibtex report"
+  "report.out" 1736607749.94931 3428 b9feeeb0c8deb6fbd2d8e8def2def89b "pdflatex"
+  "report.tex" 1736607689.9132 51649 a5847c9f9ad728739150ef9c6ea9b59a ""
   (generated)
   "report.aux"
   "report.log"
