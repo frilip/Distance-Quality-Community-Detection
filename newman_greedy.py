@@ -93,8 +93,8 @@ def newman_greedy_distance_communitysize(G, community_size):
 
 def newman_greedy_distance_auto(G):
     ''' Newman approximation using expected gamma for number of edges'''
-    c_opt = 0.022201354581903955
-    l_opt = 0.005629355830701895
+    c_opt = 0.028
+    l_opt = 0.0014
     edges = G.number_of_edges()
     expected_gamma = c_opt * np.exp( - l_opt * edges )
     return newman_greedy_distance(G, expected_gamma)

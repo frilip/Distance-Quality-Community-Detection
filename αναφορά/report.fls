@@ -302,6 +302,10 @@ INPUT ../plots/EDGES_GAMMA_FIT.pdf
 INPUT ../plots/EDGES_GAMMA_FIT.pdf
 INPUT ../plots/EDGES_GAMMA_FIT.pdf
 INPUT ../plots/EDGES_GAMMA_FIT.pdf
+INPUT ../plots/EDGES_GAMMA_FIT_noise.pdf
+INPUT ../plots/EDGES_GAMMA_FIT_noise.pdf
+INPUT ../plots/EDGES_GAMMA_FIT_noise.pdf
+INPUT ../plots/EDGES_GAMMA_FIT_noise.pdf
 INPUT ../plots/AUTO2,13.pdf
 INPUT ../plots/AUTO2,13.pdf
 INPUT ../plots/AUTO2,13.pdf
