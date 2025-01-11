@@ -7,7 +7,8 @@ import matplotlib.colors as mcolors
 from color_communites import color_communities
 
 '''
-
+TESTS FOR NEWMAN ALGORITHM, GREATES A BUNCH OF GRAPHS AND SAVES THEM
+'''
 
 # ------------- TEST -----------------
 G = nx.Graph()
@@ -61,7 +62,6 @@ print(comm)
 color_communities(G, comm)
 plt.savefig('./plots/nonconnected'+str(gamma)+'.pdf')
 
-'''
 
 
 K1 = generate_full_cluster_graph_same_size(1,4)
@@ -81,7 +81,7 @@ comm = newman_greedy_distance_auto(K)
 color_communities(K, comm)
 plt.savefig('./plots/different_size_communities.pdf')
 
-'''
+
 clusters = 4
 cluster_size = 5
 W = generate_full_cluster_graph_same_size(clusters, cluster_size)
@@ -89,4 +89,4 @@ comm_W = newman_greedy_distance_auto(W)
 print(comm_W)
 color_communities(W, comm_W)
 plt.savefig('./plots/AUTO'+str(clusters)+','+str(cluster_size)+'.pdf')
-plt.show()'''
+plt.show()

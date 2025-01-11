@@ -6,7 +6,9 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 from color_communites import color_communities
 
-
+'''
+TESTS FOR FIRST DISTANCE QUALITY OPTIMISATION ALGORITHM. CREATES A BUNCH OF GRAPHS AND SAVES THEM.
+'''
 
 # ------------- TEST -----------------
 G = nx.Graph()

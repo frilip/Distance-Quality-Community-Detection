@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.1.1)  11 JAN 2025 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.1.1)  11 JAN 2025 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -765,26 +765,26 @@ LaTeX Warning: Label `sub@' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -842,32 +842,32 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
  (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 29.
+(Font)              <14.4> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 54.
+(Font)              <12> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 54.
+(Font)              <8> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 54.
+(Font)              <6> on input line 55.
 
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (11.13979pt too wide) in paragraph at lines 127--130
+Overfull \hbox (11.13979pt too wide) in paragraph at lines 124--127
 []\LGR/cmr/m/n/12 QrhsimopoieÐtai h su-nˆr-th-sh thc bi-blio-j khc $\OML/cmm/m/it/12 networkx \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 all[]pairs[]shortest[]path[]length\U/matha/m/n/12 p\OML/cmm/m/it/12 G\U/matha/m/n/12 q$\LGR/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (7.36882pt too wide) in paragraph at lines 134--140
+Overfull \hbox (7.36882pt too wide) in paragraph at lines 131--137
 \OML/cmm/m/it/12 singe[]source[]shortest[]path[]length\U/matha/m/n/12 p\OML/cmm/m/it/12 G; source\U/matha/m/n/12 q$\LGR/cmr/m/n/12 , h o-po-Ða u-po-lo-gÐzei gia kˆpoion kìm-bo $\OML/cmm/m/it/12 source$
  []
 
@@ -877,17 +877,17 @@ Overfull \hbox (7.36882pt too wide) in paragraph at lines 134--140
 <../plots/quad_comm_gamma=0.5.pdf, id=93, 578.16pt x 578.16pt>
 File: ../plots/quad_comm_gamma=0.5.pdf Graphic file (type pdf)
 <use ../plots/quad_comm_gamma=0.5.pdf>
-Package pdftex.def Info: ../plots/quad_comm_gamma=0.5.pdf  used on input line 205.
+Package pdftex.def Info: ../plots/quad_comm_gamma=0.5.pdf  used on input line 202.
 (pdftex.def)             Requested size: 120.92421pt x 120.92314pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 206.
+(Font)              <10.95> on input line 203.
 <../plots/cluster_4,5gamma=0.02,newman.pdf, id=94, 578.16pt x 578.16pt>
 File: ../plots/cluster_4,5gamma=0.02,newman.pdf Graphic file (type pdf)
 <use ../plots/cluster_4,5gamma=0.02,newman.pdf>
-Package pdftex.def Info: ../plots/cluster_4,5gamma=0.02,newman.pdf  used on input line 211.
+Package pdftex.def Info: ../plots/cluster_4,5gamma=0.02,newman.pdf  used on input line 208.
 (pdftex.def)             Requested size: 169.29315pt x 169.28535pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 203--215
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 200--212
 [][] [] 
  []
 
@@ -895,19 +895,19 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 203--215
 
 [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 247.
+(Font)              <17.28> on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 247.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 247.
+(hyperref)                removing `subscript' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 247.
+(hyperref)                removing `math shift' on input line 244.
 
 
 
@@ -915,30 +915,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 <../plots/fullcliustergraph.pdf, id=149, 462.52798pt x 346.89601pt>
 File: ../plots/fullcliustergraph.pdf Graphic file (type pdf)
 <use ../plots/fullcliustergraph.pdf>
-Package pdftex.def Info: ../plots/fullcliustergraph.pdf  used on input line 290.
+Package pdftex.def Info: ../plots/fullcliustergraph.pdf  used on input line 287.
 (pdftex.def)             Requested size: 145.11052pt x 108.83348pt.
 <../plots/iterations=1.pdf, id=150, 578.16pt x 578.16pt>
 File: ../plots/iterations=1.pdf Graphic file (type pdf)
 <use ../plots/iterations=1.pdf>
-Package pdftex.def Info: ../plots/iterations=1.pdf  used on input line 296.
+Package pdftex.def Info: ../plots/iterations=1.pdf  used on input line 293.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 288--300
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 285--297
 [][] [] 
  []
 
 <../plots/iterations=6.pdf, id=151, 578.16pt x 578.16pt>
 File: ../plots/iterations=6.pdf Graphic file (type pdf)
 <use ../plots/iterations=6.pdf>
-Package pdftex.def Info: ../plots/iterations=6.pdf  used on input line 307.
+Package pdftex.def Info: ../plots/iterations=6.pdf  used on input line 304.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 <../plots/iterations=15.pdf, id=152, 578.16pt x 578.16pt>
 File: ../plots/iterations=15.pdf Graphic file (type pdf)
 <use ../plots/iterations=15.pdf>
-Package pdftex.def Info: ../plots/iterations=15.pdf  used on input line 313.
+Package pdftex.def Info: ../plots/iterations=15.pdf  used on input line 310.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 305--317
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 302--314
 [][] [] 
  []
 
@@ -948,7 +948,7 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 305--317
 <../plots/benchmark.pdf, id=215, 462.52798pt x 346.89601pt>
 File: ../plots/benchmark.pdf Graphic file (type pdf)
 <use ../plots/benchmark.pdf>
-Package pdftex.def Info: ../plots/benchmark.pdf  used on input line 349.
+Package pdftex.def Info: ../plots/benchmark.pdf  used on input line 346.
 (pdftex.def)             Requested size: 241.84842pt x 181.38737pt.
 
 
@@ -956,15 +956,15 @@ Package pdftex.def Info: ../plots/benchmark.pdf  used on input line 349.
 <../plots/iterations=1newman.pdf, id=260, 578.16pt x 578.16pt>
 File: ../plots/iterations=1newman.pdf Graphic file (type pdf)
 <use ../plots/iterations=1newman.pdf>
-Package pdftex.def Info: ../plots/iterations=1newman.pdf  used on input line 458.
+Package pdftex.def Info: ../plots/iterations=1newman.pdf  used on input line 455.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 <../plots/iterations=3newman.pdf, id=261, 578.16pt x 578.16pt>
 File: ../plots/iterations=3newman.pdf Graphic file (type pdf)
 <use ../plots/iterations=3newman.pdf>
-Package pdftex.def Info: ../plots/iterations=3newman.pdf  used on input line 464.
+Package pdftex.def Info: ../plots/iterations=3newman.pdf  used on input line 461.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 456--468
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 453--465
 [][] [] 
  []
 
@@ -974,15 +974,15 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 456--468
 <../plots/benchmark_newman_gamma=0.01.pdf, id=277, 462.52798pt x 346.89601pt>
 File: ../plots/benchmark_newman_gamma=0.01.pdf Graphic file (type pdf)
 <use ../plots/benchmark_newman_gamma=0.01.pdf>
-Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.01.pdf  used on input line 486.
+Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.01.pdf  used on input line 483.
 (pdftex.def)             Requested size: 193.47946pt x 145.11307pt.
 <../plots/benchmark_newman_gamma=0.02.pdf, id=278, 462.52798pt x 346.89601pt>
 File: ../plots/benchmark_newman_gamma=0.02.pdf Graphic file (type pdf)
 <use ../plots/benchmark_newman_gamma=0.02.pdf>
-Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.02.pdf  used on input line 492.
+Package pdftex.def Info: ../plots/benchmark_newman_gamma=0.02.pdf  used on input line 489.
 (pdftex.def)             Requested size: 193.47946pt x 145.11307pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 484--497
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 481--494
 [][] [] 
  []
 
@@ -991,147 +991,153 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 484--497
 [8 <../plots/iterations=1newman.pdf> <../plots/iterations=3newman.pdf> <../plots/benchmark_newman_gamma=0.01.pdf> <../plots/benchmark_newman_gamma=0.02.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 539.
+(hyperref)                removing `math shift' on input line 535.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 539.
+(hyperref)                removing `\gamma' on input line 535.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 539.
+(hyperref)                removing `math shift' on input line 535.
 
 <../plots/gammachange3,10gamma=0.02.pdf, id=390, 578.16pt x 578.16pt>
 File: ../plots/gammachange3,10gamma=0.02.pdf Graphic file (type pdf)
 <use ../plots/gammachange3,10gamma=0.02.pdf>
-Package pdftex.def Info: ../plots/gammachange3,10gamma=0.02.pdf  used on input line 545.
+Package pdftex.def Info: ../plots/gammachange3,10gamma=0.02.pdf  used on input line 541.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 <../plots/gammachange3,10gamma=0.003.pdf, id=391, 578.16pt x 578.16pt>
 File: ../plots/gammachange3,10gamma=0.003.pdf Graphic file (type pdf)
 <use ../plots/gammachange3,10gamma=0.003.pdf>
-Package pdftex.def Info: ../plots/gammachange3,10gamma=0.003.pdf  used on input line 551.
+Package pdftex.def Info: ../plots/gammachange3,10gamma=0.003.pdf  used on input line 547.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 543--555
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 539--551
 [][] [] 
  []
 
 <../plots/gammachange6,5gamma=0.02.pdf, id=392, 578.16pt x 578.16pt>
 File: ../plots/gammachange6,5gamma=0.02.pdf Graphic file (type pdf)
 <use ../plots/gammachange6,5gamma=0.02.pdf>
-Package pdftex.def Info: ../plots/gammachange6,5gamma=0.02.pdf  used on input line 560.
+Package pdftex.def Info: ../plots/gammachange6,5gamma=0.02.pdf  used on input line 556.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 <../plots/gammachange6,5gamma=0.04.pdf, id=393, 578.16pt x 578.16pt>
 File: ../plots/gammachange6,5gamma=0.04.pdf Graphic file (type pdf)
 <use ../plots/gammachange6,5gamma=0.04.pdf>
-Package pdftex.def Info: ../plots/gammachange6,5gamma=0.04.pdf  used on input line 566.
+Package pdftex.def Info: ../plots/gammachange6,5gamma=0.04.pdf  used on input line 562.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 558--570
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 554--566
 [][] [] 
  []
 
 <../plots/gamma_wrt_cluster_nodes.pdf, id=399, 462.52798pt x 346.89601pt>
 File: ../plots/gamma_wrt_cluster_nodes.pdf Graphic file (type pdf)
 <use ../plots/gamma_wrt_cluster_nodes.pdf>
-Package pdftex.def Info: ../plots/gamma_wrt_cluster_nodes.pdf  used on input line 609.
+Package pdftex.def Info: ../plots/gamma_wrt_cluster_nodes.pdf  used on input line 605.
 (pdftex.def)             Requested size: 217.6621pt x 163.24757pt.
 <../plots/gammas_approximation.pdf, id=400, 462.52798pt x 346.89601pt>
 File: ../plots/gammas_approximation.pdf Graphic file (type pdf)
 <use ../plots/gammas_approximation.pdf>
-Package pdftex.def Info: ../plots/gammas_approximation.pdf  used on input line 615.
+Package pdftex.def Info: ../plots/gammas_approximation.pdf  used on input line 611.
 (pdftex.def)             Requested size: 217.6621pt x 163.24757pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 607--619
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 603--615
 [][] [] 
+ []
+
+
+Overfull \hbox (0.74829pt too wide) in paragraph at lines 625--626
+[]\LGR/cmr/m/n/12 To a-po-tèle-sma fa-Ðne-tai sto sq ma []8bþ[] gia $\OML/cmm/m/it/12 c \U/matha/m/n/12 ^^P \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1616558536042243\OML/cmm/m/it/12 ; ^^U \U/matha/m/n/12 ^^P \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4500547630497226$\LGR/cmr/m/n/12 . 
  []
 
 
 
 [9 <../plots/gammachange3,10gamma=0.02.pdf> <../plots/gammachange3,10gamma=0.003.pdf> <../plots/gammachange6,5gamma=0.02.pdf> <../plots/gammachange6,5gamma=0.04.pdf>]
-Overfull \hbox (0.74829pt too wide) in paragraph at lines 629--630
-[]\LGR/cmr/m/n/12 To a-po-tèle-sma fa-Ðne-tai sto sq ma []8bþ[] gia $\OML/cmm/m/it/12 c \U/matha/m/n/12 ^^P \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1616558536042243\OML/cmm/m/it/12 ; ^^U \U/matha/m/n/12 ^^P \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4500547630497226$\LGR/cmr/m/n/12 . 
- []
-
 <../plots/cluster_4,5newman_auto.pdf, id=477, 578.16pt x 578.16pt>
 File: ../plots/cluster_4,5newman_auto.pdf Graphic file (type pdf)
 <use ../plots/cluster_4,5newman_auto.pdf>
-Package pdftex.def Info: ../plots/cluster_4,5newman_auto.pdf  used on input line 649.
+Package pdftex.def Info: ../plots/cluster_4,5newman_auto.pdf  used on input line 645.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 <../plots/cluster_9,9newman_auto.pdf, id=478, 578.16pt x 578.16pt>
 File: ../plots/cluster_9,9newman_auto.pdf Graphic file (type pdf)
 <use ../plots/cluster_9,9newman_auto.pdf>
-Package pdftex.def Info: ../plots/cluster_9,9newman_auto.pdf  used on input line 654.
+Package pdftex.def Info: ../plots/cluster_9,9newman_auto.pdf  used on input line 650.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 <../plots/cluster_4,15newman_auto.pdf, id=479, 578.16pt x 578.16pt>
 File: ../plots/cluster_4,15newman_auto.pdf Graphic file (type pdf)
 <use ../plots/cluster_4,15newman_auto.pdf>
-Package pdftex.def Info: ../plots/cluster_4,15newman_auto.pdf  used on input line 659.
+Package pdftex.def Info: ../plots/cluster_4,15newman_auto.pdf  used on input line 655.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 <../plots/EDGES_GAMMA_FIT.pdf, id=481, 462.52798pt x 346.89601pt>
 File: ../plots/EDGES_GAMMA_FIT.pdf Graphic file (type pdf)
 <use ../plots/EDGES_GAMMA_FIT.pdf>
-Package pdftex.def Info: ../plots/EDGES_GAMMA_FIT.pdf  used on input line 687.
-(pdftex.def)             Requested size: 139.30486pt x 104.47717pt.
+Package pdftex.def Info: ../plots/EDGES_GAMMA_FIT.pdf  used on input line 683.
+(pdftex.def)             Requested size: 208.95375pt x 156.71576pt.
 <../plots/EDGES_GAMMA_FIT_noise.pdf, id=482, 462.52798pt x 346.89601pt>
 File: ../plots/EDGES_GAMMA_FIT_noise.pdf Graphic file (type pdf)
 <use ../plots/EDGES_GAMMA_FIT_noise.pdf>
-Package pdftex.def Info: ../plots/EDGES_GAMMA_FIT_noise.pdf  used on input line 693.
-(pdftex.def)             Requested size: 139.30486pt x 104.47717pt.
+Package pdftex.def Info: ../plots/EDGES_GAMMA_FIT_noise.pdf  used on input line 689.
+(pdftex.def)             Requested size: 208.95375pt x 156.71576pt.
 
 
 [10 <../plots/gamma_wrt_cluster_nodes.pdf> <../plots/gammas_approximation.pdf> <../plots/cluster_4,5newman_auto.pdf> <../plots/cluster_9,9newman_auto.pdf> <../plots/cluster_4,15newman_auto.pdf>]
-Overfull \hbox (6.1344pt too wide) in paragraph at lines 717--721
+Overfull \hbox (6.1344pt too wide) in paragraph at lines 713--717
 \OML/cmm/m/it/12 ce[]$\LGR/cmr/m/n/12 , ìpou $\U/matha/m/n/12 |\OML/cmm/m/it/12 E\U/matha/m/n/12 |$ \LGR/cmr/m/n/12 to pl joc ak-m¸n tou $\OML/cmm/m/it/12 G$\LGR/cmr/m/n/12 , $\OML/cmm/m/it/12 c \U/matha/m/n/12 ^^P \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 022201354581903955$\LGR/cmr/m/n/12 , $\OML/cmm/m/it/12 ^^U \U/matha/m/n/12 ^^P \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 005629355830701895$\LGR/cmr/m/n/12 ,
  []
 
-<../plots/AUTO2,13.pdf, id=612, 578.16pt x 578.16pt>
+<../plots/AUTO2,13.pdf, id=613, 578.16pt x 578.16pt>
 File: ../plots/AUTO2,13.pdf Graphic file (type pdf)
 <use ../plots/AUTO2,13.pdf>
-Package pdftex.def Info: ../plots/AUTO2,13.pdf  used on input line 739.
+Package pdftex.def Info: ../plots/AUTO2,13.pdf  used on input line 735.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
-<../plots/AUTO4,5.pdf, id=613, 578.16pt x 578.16pt>
+<../plots/AUTO4,5.pdf, id=614, 578.16pt x 578.16pt>
 File: ../plots/AUTO4,5.pdf Graphic file (type pdf)
 <use ../plots/AUTO4,5.pdf>
-Package pdftex.def Info: ../plots/AUTO4,5.pdf  used on input line 745.
+Package pdftex.def Info: ../plots/AUTO4,5.pdf  used on input line 741.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 737--749
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 733--745
 [][] [] 
  []
 
-<../plots/AUTO4,10.pdf, id=614, 578.16pt x 578.16pt>
+<../plots/AUTO4,10.pdf, id=615, 578.16pt x 578.16pt>
 File: ../plots/AUTO4,10.pdf Graphic file (type pdf)
 <use ../plots/AUTO4,10.pdf>
-Package pdftex.def Info: ../plots/AUTO4,10.pdf  used on input line 754.
+Package pdftex.def Info: ../plots/AUTO4,10.pdf  used on input line 750.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
-<../plots/AUTO9,9.pdf, id=615, 578.16pt x 578.16pt>
+<../plots/AUTO9,9.pdf, id=616, 578.16pt x 578.16pt>
 File: ../plots/AUTO9,9.pdf Graphic file (type pdf)
 <use ../plots/AUTO9,9.pdf>
-Package pdftex.def Info: ../plots/AUTO9,9.pdf  used on input line 760.
+Package pdftex.def Info: ../plots/AUTO9,9.pdf  used on input line 756.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 752--764
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 748--760
 [][] [] 
  []
 
-<../plots/different_size_communities.pdf, id=618, 578.16pt x 578.16pt>
+<../plots/different_size_communities.pdf, id=619, 578.16pt x 578.16pt>
 File: ../plots/different_size_communities.pdf Graphic file (type pdf)
 <use ../plots/different_size_communities.pdf>
-Package pdftex.def Info: ../plots/different_size_communities.pdf  used on input line 808.
+Package pdftex.def Info: ../plots/different_size_communities.pdf  used on input line 804.
 (pdftex.def)             Requested size: 145.11052pt x 145.10425pt.
-<../plots/nonconnected_ssize_dcs0.011.pdf, id=619, 578.16pt x 578.16pt>
+
+Underfull \hbox (badness 1221) in paragraph at lines 805--805
+[]\LGR/cmr/m/n/10.95 (aþ) |Grˆfoc me koi-
+ []
+
+<../plots/nonconnected_ssize_dcs0.011.pdf, id=620, 578.16pt x 578.16pt>
 File: ../plots/nonconnected_ssize_dcs0.011.pdf Graphic file (type pdf)
 <use ../plots/nonconnected_ssize_dcs0.011.pdf>
-Package pdftex.def Info: ../plots/nonconnected_ssize_dcs0.011.pdf  used on input line 816.
+Package pdftex.def Info: ../plots/nonconnected_ssize_dcs0.011.pdf  used on input line 812.
 (pdftex.def)             Requested size: 143.65778pt x 143.65744pt.
-<../plots/nonconnected_ssize_dcs0.012.pdf, id=620, 578.16pt x 578.16pt>
+<../plots/nonconnected_ssize_dcs0.012.pdf, id=621, 578.16pt x 578.16pt>
 File: ../plots/nonconnected_ssize_dcs0.012.pdf Graphic file (type pdf)
 <use ../plots/nonconnected_ssize_dcs0.012.pdf>
-Package pdftex.def Info: ../plots/nonconnected_ssize_dcs0.012.pdf  used on input line 821.
+Package pdftex.def Info: ../plots/nonconnected_ssize_dcs0.012.pdf  used on input line 817.
 (pdftex.def)             Requested size: 143.65778pt x 143.65744pt.
 
-Overfull \hbox (3.34296pt too wide) in paragraph at lines 857--859
+Overfull \hbox (3.34296pt too wide) in paragraph at lines 852--854
 []\LGR/cmr/m/n/12 EÐnai ka-teu-ju-nìme-no, ìmwc e-pei-d  ìla ta pa-ra-pˆnw a-na-ptÔqjh-kan gia a-ka-te-Ôju-ntouc grˆfouc,
  []
 
@@ -1143,22 +1149,22 @@ Overfull \hbox (3.34296pt too wide) in paragraph at lines 857--859
 <../gephi/email-Eu-core.pdf, id=826, 5.69055pt x 5.40602pt>
 File: ../gephi/email-Eu-core.pdf Graphic file (type pdf)
 <use ../gephi/email-Eu-core.pdf>
-Package pdftex.def Info: ../gephi/email-Eu-core.pdf  used on input line 890.
+Package pdftex.def Info: ../gephi/email-Eu-core.pdf  used on input line 883.
 (pdftex.def)             Requested size: 290.22105pt x 275.85614pt.
 <../gephi/email-Eu-core-calculated-expectedgamma.pdf, id=827, 5.69055pt x 5.40602pt>
 File: ../gephi/email-Eu-core-calculated-expectedgamma.pdf Graphic file (type pdf)
 <use ../gephi/email-Eu-core-calculated-expectedgamma.pdf>
-Package pdftex.def Info: ../gephi/email-Eu-core-calculated-expectedgamma.pdf  used on input line 899.
+Package pdftex.def Info: ../gephi/email-Eu-core-calculated-expectedgamma.pdf  used on input line 892.
 (pdftex.def)             Requested size: 290.22105pt x 275.85614pt.
 <../gephi/email-Eu-core-calculated-gamma=0.000007.pdf, id=828, 5.69055pt x 5.40602pt>
 File: ../gephi/email-Eu-core-calculated-gamma=0.000007.pdf Graphic file (type pdf)
 <use ../gephi/email-Eu-core-calculated-gamma=0.000007.pdf>
-Package pdftex.def Info: ../gephi/email-Eu-core-calculated-gamma=0.000007.pdf  used on input line 907.
+Package pdftex.def Info: ../gephi/email-Eu-core-calculated-gamma=0.000007.pdf  used on input line 900.
 (pdftex.def)             Requested size: 290.22105pt x 275.85614pt.
 <../gephi/email-Eu-core-modularity.pdf, id=829, 5.69055pt x 5.40602pt>
 File: ../gephi/email-Eu-core-modularity.pdf Graphic file (type pdf)
 <use ../gephi/email-Eu-core-modularity.pdf>
-Package pdftex.def Info: ../gephi/email-Eu-core-modularity.pdf  used on input line 914.
+Package pdftex.def Info: ../gephi/email-Eu-core-modularity.pdf  used on input line 907.
 (pdftex.def)             Requested size: 290.22105pt x 275.85614pt.
 
 
@@ -1179,15 +1185,15 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: B9FEEEB0C8DEB6FBD2D8E8DEF2DEF89B;3428.
  ) 
 Here is how much of TeX's memory you used:
- 14856 strings out of 473362
- 246566 string characters out of 5723556
- 633025 words of memory out of 5000000
- 37726 multiletter control sequences out of 15000+600000
+ 14857 strings out of 473362
+ 246594 string characters out of 5723556
+ 632533 words of memory out of 5000000
+ 37727 multiletter control sequences out of 15000+600000
  582078 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,10n,79p,738b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,10n,79p,591b,807s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmi1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grxn1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathb12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (15 pages, 14871224 bytes).
+Output written on report.pdf (15 pages, 14874431 bytes).
 PDF statistics:
  204993 PDF objects out of 237090 (max. 8388607)
  202424 compressed objects within 2025 object streams

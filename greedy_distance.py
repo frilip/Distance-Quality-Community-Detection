@@ -4,7 +4,13 @@ from distance_quality_function import distance_quality, generate_distance_args
 
 def greedy_distance_communities(G, gamma, max_iter):
     '''
-    Greedy selection implementation of distance quality optimisation
+    Greedy selection implementation of distance quality optimisation.
+    Uses the first proposed algorithm (see report).
+
+    Initialises the communities as one for every node, then checks for every node 
+    which neighbor produces the max difference in quality.  If that difference is positive,
+    the node is asigned to the community of that neighbor. 
+    This proccess continues as long as Q can rise, or until max_iter iterations are reached.
     '''
 
     # Seperate the graph to its connected components, 
@@ -27,6 +33,7 @@ def greedy_distance_communities(G, gamma, max_iter):
         # generate calculations once
         degrees,m,shortest_paths_len,diameter, Pr, D_v_expected = generate_distance_args(cc_graph)
 
+        # initialise communities
         communities = [[node] for node in cc_graph.nodes()]
 
         current_quality = distance_quality(cc_graph,communities,gamma,degrees,m,shortest_paths_len,diameter, Pr, D_v_expected)

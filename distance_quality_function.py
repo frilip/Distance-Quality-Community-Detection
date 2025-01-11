@@ -10,7 +10,7 @@ def distance_quality(G, communities, gamma, degrees, m, shortest_paths_len, diam
     and stored in the function that calls this one. This function takes them as input. 
 
     This function should not be called on its own, as no tests for the format of the inputs 
-    has been implemented!
+    have been implemented!
     '''
 
     # quality function initialisation

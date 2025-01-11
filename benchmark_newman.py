@@ -89,11 +89,11 @@ for i in range(times):
 # normalise 
 distance_bench = distance_bench / times
 modularity_bench = modularity_bench / times
-'''
+
 plt.figure()
 plt.plot(distance_bench, label='distance')
 plt.plot(modularity_bench, label='modularity')
 plt.ylim(bottom=0)
 plt.legend()
 plt.title('Distace and modularity benchmark, newmans algorithm')
-plt.savefig('./plots/benchmark_newman_gamma='+str(gamma)+'.pdf')'''
+plt.savefig('./plots/benchmark_newman_gamma='+str(gamma)+'.pdf')

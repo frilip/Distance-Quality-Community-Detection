@@ -7,9 +7,11 @@ import numpy as np
 
 def newman_greedy_distance(G, gamma):
     '''
-    Greedy optimisation using newmans algorithm reference: #addreference
+    Greedy optimisation using the Newman algorithm. (see report)
+
     Starts with every node in its own community and repeatedly merges two communities 
-    that have the max change in Q_d if that change is non negative. 
+    that have the max change in Q_d if that change is non negative.
+
     We only calculate the change in Q_d as its cheaper.
     '''
 
@@ -33,12 +35,10 @@ def newman_greedy_distance(G, gamma):
         cc_graph = nx.relabel_nodes(cc_graph, node_mapping)
 
         # generate calculations once
-        degrees,m,shortest_paths_len,diameter, Pr, D_v_expected = generate_distance_args(cc_graph)  # see if all of them are needed
+        degrees,m,shortest_paths_len,diameter, Pr, D_v_expected = generate_distance_args(cc_graph)  
 
         No_comm = cc_graph.number_of_nodes() # number of communities
-        communities = [[node] for node in cc_graph.nodes()]
-
-        #current_quality = distance_quality(cc_graph,communities,gamma,degrees,m,shortest_paths_len,diameter, Pr, D_v_expected)
+        communities = [[node] for node in cc_graph.nodes()]  # init communities
 
 
         # initialise matrix that will hold the values of D_Q(i,j) for communities i,j if they are merged
@@ -47,7 +47,7 @@ def newman_greedy_distance(G, gamma):
         for i in range (No_comm):
             for j in range (No_comm):
                 if i==j:
-                    D_Q[i][j] = - float('inf')
+                    D_Q[i][j] = - float('inf')   # so that joining a community to itself is not accounted
                     continue
                 D_Q[i][j] = 2 * ( (1-gamma) * D_v_expected[i][j] - gamma * shortest_paths_len[i][j] )
 
@@ -85,14 +85,15 @@ def newman_greedy_distance(G, gamma):
 
 
 def newman_greedy_distance_communitysize(G, community_size):
-    ''' Newman maximisation algorithm using expected gamma for community_size'''
+    ''' Newman maximisation algorithm using expected gamma for community_size (see report)'''
+
     c, l = 0.1616558536042243, 0.4500547630497226
     gamma = c * np.exp(-l*community_size)
     return newman_greedy_distance(G, gamma)
 
 
 def newman_greedy_distance_auto(G):
-    ''' Newman approximation using expected gamma for number of edges'''
+    ''' Newman approximation using expected gamma for number of edges  (see report)'''
     c_opt = 0.022201354581903955
     l_opt = 0.005629355830701895
     edges = G.number_of_edges()
