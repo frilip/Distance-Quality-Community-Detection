@@ -1,4 +1,4 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[10pt, letterpaper]{article}
 \usepackage{geometry}
 \geometry{
  a4paper,
@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage{comment}
 \usepackage{caption}
+\usepackage{float}
 \newcommand{\en}{\selectlanguage{english}}
 \newcommand{\gr}{\selectlanguage{greek}}
 
@@ -28,6 +29,10 @@
 \begin{document}
 \maketitle
 
+
+% !TeX spellcheck = gr
+
+
 \section{Εισαγωγή}
 
 Στην εργασία αυτή εξετάζουμε την αναγνώρηση κοινοτήτων. Συγκεκριμένα θα 
@@ -36,7 +41,7 @@
 επιλογή. 
 
 Οι συναρτήσεις αυτές (\textlatin{quality functions}) δέχονται ως όρισμα έναν
-γράφο και μια κατανομή κοινοτήτων και επιστρέφουν μία τιμή. Σκοπώς μας είναι 
+γράφο και μια κατανομή κοινοτήτων και επιστρέφουν μία τιμή. Σκοπός μας είναι 
 να επιστρέφουν υψηλές τιμές για κατανομές που παρουσιάζουν ισχυρή κοινοτική συμπεριφορά,
 ώστε να μπορούμε μεγιστοποιώντας αυτή τη συνάρτηση να ανιχνεύσουμε τις κοινότητες.
 
@@ -55,6 +60,7 @@
 \[ D_V(i,j) = \min \{ k:A^k_G (i,j) \neq 0 \} \]
 τον πίνακα που περιέχει τις αποστάσεις μεταξύ κάθε δύο κόμβων του γράφου 
 $i,j$, όπου $A^k_G(i,j)$ ο πίνακας γειτνίασης του γράφου $G$. υψομένος στην $k$
+
 δύναμη. 
 
 Ορίζουμε επίσης:
@@ -97,7 +103,7 @@ $C$ ως προς του τυχαίου γράφου.
 \[ Q_d(G,C) = \sum_{c \in C} [(1 - \gamma)\overline{ D_V(c) } - \gamma D_V(c) ],  \ \ \ \ \gamma \in (0,1)\]
 
 ώστε για $\gamma = 0.5$ να ισοδυναμεί με τον προηγούμενο ορισμό, αλλά να έχω 
-δυνατότητα να επιλέξω ποιός όρος θα επηρρεάσει περισσότερο.
+δυνατότητα να επιλέξω ποιός όρος θα επηρεάσει περισσότερο.
 
 
 
@@ -191,27 +197,29 @@ $C$ ως προς του τυχαίου γράφου.
 
 
 
-
 \subsubsection{Μια πρώτη ματία στα αποτελέσματα}
 
 \captionsetup[subfigure]{width=0.7\textwidth}
 
-\begin{figure}
+
+\begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
     \centering 
-    \includegraphics[width=0.5\linewidth]{quad_comm_gamma=0.5.pdf}
+    \includegraphics[width=0.68\linewidth]{quad_comm_gamma=0.5.pdf}
     \caption{Αποτελέσματα ωμής δύναμης για $\gamma = 0.5$. Κάθε κόμβος βρίσκεται σε δική του κοινότητα.}
     \label{fig:graph8comm}
   \end{subfigure}
   \begin{subfigure}{0.5\textwidth}
     \centering 
-    \includegraphics[width=0.7\linewidth]{cluster_4,5gamma=0.02,newman.pdf}
+    \includegraphics[width=0.75\linewidth]{cluster_4,5gamma=0.02,newman.pdf}
     \caption{Αποτελέσματα αλγορίθμου \textlatin{Newman} για $\gamma = 0.02$. Οι κοινότητες έχουν αναγνωριστεί σωστά.}
     \label{fig:newman4,5}
   \end{subfigure}
   \caption{}
   \label{}
 \end{figure}
+
+
 
 
 
@@ -231,12 +239,7 @@ $C$ ως προς του τυχαίου γράφου.
 
 
 
-
-
-
-
-
-
+\pagebreak
 
 
 
@@ -265,8 +268,8 @@ $C$ ως προς του τυχαίου γράφου.
 παραμένει σταθερό όταν μετακινούμε μόνο έναν κόμβο και κρατάμε τις υπόλοιπες κοινότητες
 σταθερές, και το γεγονός αυτό θα εκμεταλευτούμε στη συνέχεια.
 
-Επίσης εδώ τίθεται το ζήτημα της σύγκλισης, εάν ο αλγόριθμος συγκλίνει (εξαρτάται από 
-τη τιμή του $\gamma$) και πόσο γρήγορα, το οποίο λύνεται στην συνέχεια.
+Επίσης εδώ τίθεται το ζήτημα της σύγκλισης, δηλαδή το πόσο γρήγορα ο αλγόριθμος συγκλίνει στην βέλτιστη λύση (εξαρτάται από 
+τη τιμή του $\gamma$), το οποίο λύνεται στην συνέχεια.
 
 % αποτελεσματα 
 
@@ -281,7 +284,7 @@ $C$ ως προς του τυχαίου γράφου.
 Σε αυτόν τον γράφο περιμένουμε οι κοινότητες να είναι οι τέσσερεις πλήρεις υπογράφοι.
 
 
-\begin{figure}
+\begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.6\linewidth]{fullcliustergraph.pdf}
@@ -298,7 +301,7 @@ $C$ ως προς του τυχαίου γράφου.
   \label{}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.6\linewidth]{iterations=6.pdf}
@@ -341,7 +344,7 @@ $C$ ως προς του τυχαίου γράφου.
 Η \textlatin{distance} έχει σαφώς χειρότερα αποτελέσματα.
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\linewidth]{benchmark.pdf}
   \caption{Μέση απόδοση με \textlatin{Jaccard similarity} των δύο μετρηκών. \\
@@ -408,6 +411,8 @@ $C$ ως προς του τυχαίου γράφου.
   \Delta Q_{ik} = 2 \cdot [(1-\gamma)\overline{ D_V(c_i,c_j)} - \gamma  D_V(c_i,c_j)   ]
 \end{equation}
 
+
+
 \begin{enumerate}
   \item Υπολογίζουμε τις απαραίτητες ποσότητες και τις αποθηκεύουμε \\ ($D_V(i,j), \ d_k(i), \ m_G(k), \ Pr[i,j,k],  \ \overline{D_V(i,j)},diam(G)$). 
   \item Αρχικοποιούμε κάθε κόμβο σε δική του κοινότητα.
@@ -442,14 +447,20 @@ $C$ ως προς του τυχαίου γράφου.
 μεγίστου στον πίνακα σε $O(log|V|)$. Όμως αυτό δε το υλοποίησα στο πλαίσιο της παρούσης 
 εργασίας.
 
-
-
-
 \subsubsection{Απόδοση}
 
 
+Στα σχήματα \ref{new_1}, \ref{new_2} φαίνονται τα αποτελέσματα του συγκεκριμένου αλγόριθμου 
+με τις ίδιες τεχνικές όπως προηγουμένως. 
+Ο αλγόριθμος \textlatin{Newman} φαίνεται να έχει ίσως χειρότερα (ή αντίστοιχα) αποτελέσματα από/με τον 
+προηγούμενο, το οποίο είναι αναμενόμενο αφού ενώνει κάθε φορά ολόκληρες κοινότητες 
+αντί για μεμονομένους κόμβους και έτσι μια λάθος ένωση στην αρχή, διαδίδεται και πολλαπλασιάζεται.
 
-\begin{figure}
+Το πλεονέκτιμά του είναι η ταχύτητα. 
+
+
+
+\begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.6\linewidth]{iterations=1newman.pdf}
@@ -468,16 +479,8 @@ $C$ ως προς του τυχαίου γράφου.
 
 
 
-Στα σχήματα \ref{new_1}, \ref{new_2} φαίνονται τα αποτελέσματα του συγκεκριμένου αλγόριθμου 
-με τις ίδιες τεχνικές όπως προηγουμένως. 
-Ο αλγόριθμος \textlatin{Newman} φαίνεται να έχει ίσως χειρότερα (ή αντίστοιχα) αποτελέσματα από/με τον 
-προηγούμενο, το οποίο είναι αναμενόμενο αφού ενώνει κάθε φορά ολόκληρες κοινότητες 
-αντί για μεμονομένους κόμβους και έτσι μια λάθος ένωση στην αρχή, διαδίδεται και πολλαπλασιάζεται.
 
-Το πλεονέκτιμά του είναι η ταχύτητα. 
-
-
-\begin{figure}
+\begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.8\linewidth]{benchmark_newman_gamma=0.01.pdf}
@@ -535,16 +538,16 @@ $networkx$ που χρησιμοποίησα.
 \subsection{Επιρροή της τιμής $\gamma$}  \label{gamma}
 
 
-\begin{figure}
+\begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{gammachange3,10gamma=0.02.pdf}
+    \includegraphics[width=0.8\linewidth]{gammachange3,10gamma=0.02.pdf}
     \caption{$\gamma = 0.02$}
     \label{g1}
   \end{subfigure}
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{gammachange3,10gamma=0.003.pdf}
+    \includegraphics[width=0.8\linewidth]{gammachange3,10gamma=0.003.pdf}
     \caption{$\gamma = 0.03$}
     \label{g2}
   \end{subfigure}
@@ -553,13 +556,13 @@ $networkx$ που χρησιμοποίησα.
 
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{gammachange6,5gamma=0.02.pdf}
+    \includegraphics[width=0.8\linewidth]{gammachange6,5gamma=0.02.pdf}
     \caption{$\gamma = 0.02$}
     \label{g3}
   \end{subfigure}
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{gammachange6,5gamma=0.04.pdf}
+    \includegraphics[width=0.8\linewidth]{gammachange6,5gamma=0.04.pdf}
     \caption{$\gamma = 0.03$}
     \label{g4}
   \end{subfigure}
@@ -599,7 +602,30 @@ $networkx$ που χρησιμοποίησα.
 Βρέθηκε ξεκάθαρη εξάρτηση της βέλτιστης τιμής $\gamma$ και του μεγέθους κοινότητας.
 
 
-\begin{figure}
+
+
+Στο σχήμα \ref{optimal_gamma} απεικονίζεται η εξάρτηση αυτή για μεγέθη κοινοτήτων 
+απο 1 μέχρι 50 κόμβους. Παρατηρούμε εκθετική μείωση, οπότε δοκιμάστηκε να προσαρμωστεί 
+η καμπύλη $c e^{- \lambda x}$ (δηλαδή να βρεθούν σταθερές $c, \lambda$) στα δεδομένα.
+Χρησιμοποιήθηκε η συνάρτηση $scipy.optimise.curve\_fit$.
+
+Το αποτέλεσμα φαίνεται στο σχήμα \ref{optimal_gamma_approx} για $c = 0.1616558536042243, \lambda = 0.4500547630497226$.
+
+
+Έτσι δημιουργήθηκε μια παραλλαγή του αλγορίθμου $Newman$, όπου αυτή τη φορά 
+το $\gamma$ δε δίνεται ως είσοδος, αλλά υπολογίζεται με την σχέση $ce^{-\lambda x}$,
+όπου $x$ το αναμενόμενο μέγεθος κοινοτήτων.
+
+Αποτελέσματα της μεθόδου αυτής φαίνονται στο σχήμα \ref{auto_cluster_size}.
+Στα παραδείγματα \ref{9a}, \ref{9b} κατάφερε με ακρίβεια να αναγνωρίσει 
+τις κοινότητες, όμως στο \ref{9c} απέτυχε. Ίσως με περισσότερα δεδομένα 
+να μπορούσε να εκτιμηθεί καλύτερα η καμπύλη της συσχέτησης του βέλτιστου $\gamma$
+και να είχαμε καλύτερα αποτελέσματα. 
+
+
+
+
+\begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.9\linewidth]{gamma_wrt_cluster_nodes.pdf}
@@ -616,25 +642,6 @@ $networkx$ που χρησιμοποίησα.
   \caption{}
   \label{}
 \end{figure}
-
-Στο σχήμα \ref{optimal_gamma} απεικονίζεται η εξάρτηση αυτή για μεγέθη κοινοτήτων 
-απο 1 μέχρι 50 κόμβους. Παρατηρούμε εκθετική μείωση, οπότε δοκιμάστηκε να προσαρμωστεί 
-η καμπύλη $c e^{- \lambda x}$ (δηλαδή να βρεθούν σταθερές $c, \lambda$) στα δεδομένα.
-Χρησιμοποιήθηκε η συνάρτηση $scipy.optimise.curve\_fit$.
-
-Το αποτέλεσμα φαίνεται στο σχήμα \ref{optimal_gamma_approx} για $c = 0.1616558536042243, \lambda = 0.4500547630497226$.
-
-Έτσι δημιουργήθηκε μια παραλλαγή του αλγορίθμου $Newman$, όπου αυτή τη φορά 
-το $\gamma$ δε δίνεται ως είσοδος, αλλά υπολογίζεται με την σχέση $ce^{-\lambda x}$,
-όπου $x$ το αναμενόμενο μέγεθος κοινοτήτων.
-
-Αποτελέσματα της μεθόδου αυτής φαίνονται στο σχήμα \ref{auto_cluster_size}.
-Στα παραδείγματα \ref{9a}, \ref{9b} κατάφερε με ακρίβεια να αναγνωρίσει 
-τις κοινότητες, όμως στο \ref{9c} απέτυχε. Ίσως με περισσότερα δεδομένα 
-να μπορούσε να εκτιμηθεί καλύτερα η καμπύλη της συσχέτησης του βέλτιστου $\gamma$
-και να είχαμε καλύτερα αποτελέσματα. 
-
-
 
 
 
@@ -680,16 +687,17 @@ $networkx$ που χρησιμοποίησα.
   \centering
   \begin{subfigure}{0.48\textwidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{EDGES_GAMMA_FIT.pdf}
+    \includegraphics[width=\linewidth]{EDGES_GAMMA_FIT.pdf}
     \caption{}
     \label{EDGESFIT}
   \end{subfigure}
   \begin{subfigure}{0.48\textwidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{EDGES_GAMMA_FIT_noise.pdf}
+    \includegraphics[width=\linewidth]{EDGES_GAMMA_FIT_noise.pdf}
     \caption{}
     \label{EDGESFIT_noise}
   \end{subfigure}
+  \caption{}
 \end{figure}
 
 Οπότε για διάφορους γράφους απεικόνησα το βέλτιστο $\gamma$ ως προς το πλήθος ακμών και 
@@ -732,13 +740,13 @@ $c=0.022201354581903955$, $\lambda = 0.005629355830701895$, και εκτελε�
 \begin{figure}
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{AUTO2,13.pdf}
+    \includegraphics[width=0.8\linewidth]{AUTO2,13.pdf}
     \caption{2 κοινότητες 13 κόμβων}
     \label{}
   \end{subfigure}
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{AUTO4,5.pdf}
+    \includegraphics[width=0.8\linewidth]{AUTO4,5.pdf}
     \caption{4 κοινότητες 5 κόμβων}
     \label{}
   \end{subfigure}
@@ -747,13 +755,13 @@ $c=0.022201354581903955$, $\lambda = 0.005629355830701895$, και εκτελε�
 
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{AUTO4,10.pdf}
+    \includegraphics[width=0.8\linewidth]{AUTO4,10.pdf}
     \caption{4 κοινότητες 10 κόμβων}
     \label{}
   \end{subfigure}
   \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.6\linewidth]{AUTO9,9.pdf}
+    \includegraphics[width=0.8\linewidth]{AUTO9,9.pdf}
     \caption{9 κοινότητες 9 κόμβων}
     \label{}
   \end{subfigure}
@@ -836,6 +844,10 @@ $c=0.022201354581903955$, $\lambda = 0.005629355830701895$, και εκτελε�
 
 \section{Πραγματικός γράφος}
 
+
+
+
+
 Θε ελέγξουμε, επιτέλους, την απόδοση της $Q_d$ σε έναν πραγματικό δίκτυο. 
 Χρησιμοποιήθηκε το δίκτυο \href{https://snap.stanford.edu/data/email-Eu-core.html}{
   \textlatin{email-Eu-core network}
@@ -844,6 +856,12 @@ $c=0.022201354581903955$, $\lambda = 0.005629355830701895$, και εκτελε�
 έρευνας μέσω \textlatin{e-mail}. 
 Αποτελείται από 1005 κόμβους και 25571 ακμές.
 Μας δίνονται επίσης οι πραγματικές κοινότητες (42 τμήματα στα οποία ανήκουν).
+
+
+
+
+
+
 
 Στο σχήμα \ref{Eu-real} αποτυπώνεται το δίκτυο και οι σημαντικότερες κοινότητες του 
 χρωματίζονται.
@@ -872,9 +890,6 @@ $\gamma$, αλλά ίσως και με καλύτερα δεδομένα και
 \ref{Eu-modularity}.
 Αξιοσημείωτο ότι η ομοιότητα \textlatin{Jaccard} πραγματικών κοινοτήτων με τη \textlatin{modularity} είναι μικρότερη 
 από ότι με την \textlatin{distance} ($\approx 0.1$). 
-
-
-
 
 
 
@@ -910,7 +925,7 @@ $\gamma$, αλλά ίσως και με καλύτερα δεδομένα και
 \end{figure}
 
 
-
+\pagebreak
 
 \section{Συμπεράσματα}
 
