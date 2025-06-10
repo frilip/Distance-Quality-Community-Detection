@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
-
 def color_communities(H, comm):
     node_colors = {}
     

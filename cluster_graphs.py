@@ -5,6 +5,7 @@ from greedy_distance import greedy_distance_communities
 from jaccard_implementation import jaccard_similarity_communities_optimal
 import random
 
+
 def generate_full_cluster_graph_old(clusters, cluster_nodes):
     '''Generates a graph of 'cluster' in number full graphs, each one of those
     has 'cluster_nodes' in number nodes'''
