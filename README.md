@@ -1,3 +1,7 @@
+## Open the file report.pdf for the description of the developed algorithms and the results of this research
+
+
+
 Στο φάκελο αυτό θα βρείτε όλα τα αρχεία της εργασίας στη Θεωρία Δικτύων 2024-2025.
 Ονομάζομαι Φίλιππος Ρωσσίδης, το ΑΕΜ μου είναι 10379.
 
